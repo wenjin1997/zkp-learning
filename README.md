@@ -1,17 +1,20 @@
 # 零知识证明
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
-- [ ] 故事中的零知识证明
+- [x] 故事中的零知识证明
   - [x] [The Incredible Machine](https://medium.com/qed-it/the-incredible-machine-4d1270d7363a)
     * [笔记](https://wenjin1997.github.io/2022/11/28/The-Incredible-Machine/)
     * [原文PDF](/papers/The_Incredible_Machine.pdf)
   - [x] [How to explain zero-knowledge protocols to your children](https://pages.cs.wisc.edu/~mkowalcz/628.pdf)
     * [笔记](https://wenjin1997.github.io/2022/11/28/How-to-explain-zero-knowledge-protocols-to-your-children/)
     * [原文PDF](/papers/How%20to%20Explain%20Zero-Knowledge%20Protocols%20to%20Your%20Children.pdf) 
-  - [ ] [Cryptographic and Physical Zero-Knowledge Proof Systems for Solutions of Sudoku Puzzles](https://www.wisdom.weizmann.ac.il/~naor/PAPERS/sudoku.pdf)
-    - [原文另一个版本的PDF](papers/Cryptographic%20and%20Physical%20Zero-Knowledge%20Proof%20Systems%20for%20Solutions%20of%20Sudoku%20Puzzles.pdf)，看起来排版更好看
-  - [ ] [Zero knowledge proofs: a tale of two friends](https://medium.com/hackernoon/zero-knowledge-proofs-a-tale-of-two-friends-d7a0ffac3185)
-  - [ ] [Explain Like I’m 5: Zero Knowledge Proof (Halloween Edition)](https://medium.com/hackernoon/eli5-zero-knowledge-proof-78a276db9eff)
+  - [x] [Cryptographic and Physical Zero-Knowledge Proof Systems for Solutions of Sudoku Puzzles](https://www.wisdom.weizmann.ac.il/~naor/PAPERS/sudoku.pdf)
+    - [笔记](https://wenjin1997.github.io/2022/11/29/Cryptographic-and-Physical-Zero-Knowledge-Proof-Systems-for-Solutions-of-Sudoku-Puzzles/) 
+    - [原文另一个版本的PDF](papers/Cryptographic%20and%20Physical%20Zero-Knowledge%20Proof%20Systems%20for%20Solutions%20of%20Sudoku%20Puzzles.pdf)，看起来排版更好看，论文链接在[这里](https://link.springer.com/content/pdf/10.1007/s00224-008-9119-9.pdf)
+  - [x] [Zero knowledge proofs: a tale of two friends](https://medium.com/hackernoon/zero-knowledge-proofs-a-tale-of-two-friends-d7a0ffac3185)
+    简短的小故事，关于如何向别人证明我知道还原魔方的方法，而不泄漏拧魔方的步骤。
+  - [x] [Explain Like I’m 5: Zero Knowledge Proof (Halloween Edition)](https://medium.com/hackernoon/eli5-zero-knowledge-proof-78a276db9eff)
+    通过万圣节比较糖果数量是否相同的故事来解释什么是零知识证明，这个方法也可以用来看两个百万富翁拥有的财富是否一样，但是不用告诉对方自己具体有多少钱。
 - [ ] 深入理解零知识证明
   - [ ] [Zero Knowledge Proofs: An illustrated primer](https://blog.cryptographyengineering.com/2014/11/27/zero-knowledge-proofs-illustrated-primer/)
   - [ ] [Zero Knowledge Proofs: An illustrated primer, Part 2](https://blog.cryptographyengineering.com/2017/01/21/zero-knowledge-proofs-an-illustrated-primer-part-2/)
