@@ -20,11 +20,11 @@
     - [x] [Zero Knowledge Proofs: An illustrated primer, Part 2](https://blog.cryptographyengineering.com/2017/01/21/zero-knowledge-proofs-an-illustrated-primer-part-2/)
       - [笔记](https://wenjin1997.github.io/2022/11/30/Zero-Knowledge-Proofs-An-illustrated-primer-Part2/)
   - [ ] 安比实验室零知识证明介绍系列文章
-    - [ ] [初识「零知识」与「证明」](https://secbit.io/blog/2019/07/31/zero-knowledge-and-proof/)
-    - [ ] [从「模拟」理解零知识证明：平行宇宙与时光倒流](https://secbit.io/blog/2019/08/06/understand-zero-knowledge-proof-by-simulator/)
+    - [x] [初识「零知识」与「证明」](https://secbit.io/blog/2019/07/31/zero-knowledge-and-proof/)
+    - [x] [从「模拟」理解零知识证明：平行宇宙与时光倒流](https://secbit.io/blog/2019/08/06/understand-zero-knowledge-proof-by-simulator/)
     - [ ] [读心术：从零知识证明中提取「知识」](https://secbit.io/blog/2019/08/28/extractor-and-proof-of-knowledge/)
     - [ ] [亚瑟王的「随机」挑战：从交互到非交互式零知识证明](https://secbit.io/blog/2019/11/01/from-interactive-zkp-to-non-interactive-zkp/)
-    - [ ] [零知识证明：一个略微严肃的科普](https://zhuanlan.zhihu.com/p/29491567)
+  - [ ] [零知识证明：一个略微严肃的科普](https://zhuanlan.zhihu.com/p/29491567)
   - [ ] [Zero-Knowledge Proofs: A Layman’s Introduction](https://blog.aventus.io/zero-knowledge-proofs-a-laymans-introduction-7020b93beeda)
   - [ ] [白话零知识证明（一）](https://zhuanlan.zhihu.com/p/33189921)
 - [ ] 零知识证明的发展
