@@ -13,7 +13,7 @@
     - [原文另一个版本的PDF](papers/Cryptographic%20and%20Physical%20Zero-Knowledge%20Proof%20Systems%20for%20Solutions%20of%20Sudoku%20Puzzles.pdf)，看起来排版更好看，论文链接在[这里](https://link.springer.com/content/pdf/10.1007/s00224-008-9119-9.pdf)
   - [x] [Zero knowledge proofs: a tale of two friends](https://medium.com/hackernoon/zero-knowledge-proofs-a-tale-of-two-friends-d7a0ffac3185)：简短的小故事，关于如何向别人证明我知道还原魔方的方法，而不泄漏拧魔方的步骤。
   - [x] [Explain Like I’m 5: Zero Knowledge Proof (Halloween Edition)](https://medium.com/hackernoon/eli5-zero-knowledge-proof-78a276db9eff)：通过万圣节比较糖果数量是否相同的故事来解释什么是零知识证明，这个方法也可以用来看两个百万富翁拥有的财富是否一样，但是不用告诉对方自己具体有多少钱。
-- [ ] 深入理解零知识证明
+- [x] 深入理解零知识证明
   - [x] 零知识证明：抛砖引玉
     - [x] [Zero Knowledge Proofs: An illustrated primer](https://blog.cryptographyengineering.com/2014/11/27/zero-knowledge-proofs-illustrated-primer/)
       - [笔记](https://wenjin1997.github.io/2022/11/16/Zero-Knowledge-Proofs-An-illustrated-primer/)
@@ -25,10 +25,10 @@
     - [x] [读心术：从零知识证明中提取「知识」](https://secbit.io/blog/2019/08/28/extractor-and-proof-of-knowledge/)
     - [x] [亚瑟王的「随机」挑战：从交互到非交互式零知识证明](https://secbit.io/blog/2019/11/01/from-interactive-zkp-to-non-interactive-zkp/)
   - [x] [零知识证明：一个略微严肃的科普](https://zhuanlan.zhihu.com/p/29491567)
-  - [ ] [Zero-Knowledge Proofs: A Layman’s Introduction](https://blog.aventus.io/zero-knowledge-proofs-a-laymans-introduction-7020b93beeda)
-  - [ ] [白话零知识证明（一）](https://zhuanlan.zhihu.com/p/33189921)
+  - [x] [Zero-Knowledge Proofs: A Layman’s Introduction](https://blog.aventus.io/zero-knowledge-proofs-a-laymans-introduction-7020b93beeda)
+  - [x] [白话零知识证明（一）](https://zhuanlan.zhihu.com/p/33189921)
 - [ ] 零知识证明的发展
-  - [ ] [区块链学习笔记 (1)：零知识证明的江湖](https://zhuanlan.zhihu.com/p/31651393)
+  - [x] [区块链学习笔记 (1)：零知识证明的江湖](https://zhuanlan.zhihu.com/p/31651393)
   - [ ] [Efficient Cryptographic Arguments and Proofs – Or How I Became a Fractional Monetary Unit](https://www.benthamsgaze.org/2019/05/22/efficient-cryptographic-arguments-and-proofs-or-how-i-became-a-fractional-monetary-unit/)
 - [ ] zk-SNARKs 原理
   - [ ] V 神的 zk-SNARKs 科普文章
