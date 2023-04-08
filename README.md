@@ -15,7 +15,7 @@
 - [x] [3 RSA、环签名、同态加密](https://www.bilibili.com/video/BV1Nk4y1476t/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
   * [PDF讲义]()
 - [ ] [4 承诺、零知识证明、BulletProof范围证明、Diffie-Hellman密钥协商](https://www.bilibili.com/video/BV1aX4y1R7P4/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
-  * [PDF讲义]()
+  * [PDF讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC4%E8%AF%BE%20%E6%89%BF%E8%AF%BA%E3%80%81%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E%E3%80%81BulletProof%E8%8C%83%E5%9B%B4%E8%AF%81%E6%98%8E%E3%80%81Diffie-Hellman%E5%AF%86%E9%92%A5%E5%8D%8F%E5%95%86.pdf)
 
 ### Zero Knowledge Proofs
 斯坦福ZK课程，官网链接：[Zero Knowledge Proofs](https://zk-learning.org/)
