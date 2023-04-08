@@ -1,5 +1,10 @@
 # 零知识证明
 ## 课程
+### 区块链技术与应用
+课程链接：[北京大学肖臻老师《区块链技术与应用》公开课](https://www.bilibili.com/video/BV1Vt411X7JF?p=1&vd_source=c6586ed2410fae637f393017e00f4845)
+
+* [讲义](http://zhenxiao.com/blockchain/)
+* [笔记]()
 ### 密码学系列课程
 课程链接：[密码学系列课程](https://www.bilibili.com/video/BV18T411k74f/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
 #### 密码学系列
