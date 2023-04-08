@@ -16,6 +16,12 @@
   * [PDF讲义]()
 - [ ] [4 承诺、零知识证明、BulletProof范围证明、Diffie-Hellman密钥协商](https://www.bilibili.com/video/BV1aX4y1R7P4/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
   * [PDF讲义]()
+
+### Zero Knowledge Proofs
+斯坦福ZK课程，官网链接：[Zero Knowledge Proofs](https://zk-learning.org/)
+
+### Modern Zero Knowledge Cryptography
+官网链接：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
 - [x] 故事中的零知识证明
