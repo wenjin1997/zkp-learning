@@ -9,19 +9,23 @@
 课程链接：[密码学系列课程](https://www.bilibili.com/video/BV18T411k74f/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
 #### 密码学系列
 - [x] [1 对称加密与哈希函数](https://www.bilibili.com/video/BV18T411k74f/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
-  * [PDF讲义]()
+  * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E8%AE%B2%E7%A8%BF%E7%AC%AC1%E6%9C%9F--%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E4%B8%8E%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0.pdf)
 - [x] [2 公钥加密与数字签名](https://www.bilibili.com/video/BV1qb411Z7jp/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
-  * [PDF讲义]()
+  * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC2%E6%AC%A1%E8%AF%BE%20%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86%E4%B8%8E%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D.pdf)
 - [x] [3 RSA、环签名、同态加密](https://www.bilibili.com/video/BV1Nk4y1476t/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
-  * [PDF讲义]()
-- [ ] [4 承诺、零知识证明、BulletProof范围证明、Diffie-Hellman密钥协商](https://www.bilibili.com/video/BV1aX4y1R7P4/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
-  * [PDF讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC4%E8%AF%BE%20%E6%89%BF%E8%AF%BA%E3%80%81%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E%E3%80%81BulletProof%E8%8C%83%E5%9B%B4%E8%AF%81%E6%98%8E%E3%80%81Diffie-Hellman%E5%AF%86%E9%92%A5%E5%8D%8F%E5%95%86.pdf)
+  * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC3%E8%AF%BE%20RSA%E3%80%81%E7%8E%AF%E7%AD%BE%E5%90%8D%E4%B8%8E%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%20.pdf)
+  * [笔记](/courses/cryptography-lynndell/note/note%20%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC3%E8%AF%BE%20RSA%E3%80%81%E7%8E%AF%E7%AD%BE%E5%90%8D%E4%B8%8E%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%20.pdf)
+- [x] [4 承诺、零知识证明、BulletProof范围证明、Diffie-Hellman密钥协商](https://www.bilibili.com/video/BV1aX4y1R7P4/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
+  * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC4%E8%AF%BE%20%E6%89%BF%E8%AF%BA%E3%80%81%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E%E3%80%81BulletProof%E8%8C%83%E5%9B%B4%E8%AF%81%E6%98%8E%E3%80%81Diffie-Hellman%E5%AF%86%E9%92%A5%E5%8D%8F%E5%95%86.pdf)
+  * [笔记](/courses/cryptography-lynndell/note/note%20%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC4%E8%AF%BE%20%E6%89%BF%E8%AF%BA%E3%80%81%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E%E3%80%81BulletProof%E8%8C%83%E5%9B%B4%E8%AF%81%E6%98%8E%E3%80%81Diffie-Hellman%E5%AF%86%E9%92%A5%E5%8D%8F%E5%95%86.pdf)
 
 ### Zero Knowledge Proofs
 斯坦福ZK课程，官网链接：[Zero Knowledge Proofs](https://zk-learning.org/)
 
-### Modern Zero Knowledge Cryptography
-官网链接：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
+
+### 其他课程
+* [[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
+* [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
 - [x] 故事中的零知识证明
@@ -122,3 +126,7 @@
   - [ ] [Libra](https://eprint.iacr.org/2019/317)
   - [ ] [Hyrax](https://eprint.iacr.org/2017/1132.pdf)
   - [ ] [zk-STARKs](https://eprint.iacr.org/2018/046)
+
+## 资讯了解
+* [YouTube频道-Vic TALK](https://www.youtube.com/@victalk3834/videos)：视频博主，分享Web3资讯与观点。
+* [DeFiLlama](https://defllllama.com/?gclid=Cj0KCQjwocShBhCOARIsAFVYq0glToXBCO583QvUAdm3LVtUWO0VmVmm7biLrawGkhU2ncYzCEPHYdMaAkq4EALw_wcB)：Defi数据资讯平台。
