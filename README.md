@@ -19,12 +19,20 @@
   * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC4%E8%AF%BE%20%E6%89%BF%E8%AF%BA%E3%80%81%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E%E3%80%81BulletProof%E8%8C%83%E5%9B%B4%E8%AF%81%E6%98%8E%E3%80%81Diffie-Hellman%E5%AF%86%E9%92%A5%E5%8D%8F%E5%95%86.pdf)
   * [笔记](/courses/cryptography-lynndell/note/note%20%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC4%E8%AF%BE%20%E6%89%BF%E8%AF%BA%E3%80%81%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E%E3%80%81BulletProof%E8%8C%83%E5%9B%B4%E8%AF%81%E6%98%8E%E3%80%81Diffie-Hellman%E5%AF%86%E9%92%A5%E5%8D%8F%E5%95%86.pdf)
 
+### ZK Shanghai 2023
+课程官网：[零知识证明工作坊 ZK Shanghai 2023](https://zkshanghai.xyz/)
+
+* [ ] [第1 课 初识零知识](https://www.youtube.com/watch?v=gTzXM1Se-38&ab_channel=SutuLabs)
+  * [讲义](/courses/ZK%20Shanghai%202023/lecture%201/1-intro.pdf)
+
+### Modern Zero Knowledge Cryptography
+课程官网：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
+
+* [ ] [Session 1 Introduction to ZK](https://www.youtube.com/watch?v=wj5fm_YvhEk&ab_channel=0xPARCFoundation)
+  * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/slides/Modern%20ZK%20Crypto%20-%20Session%201.pdf)
 ### Zero Knowledge Proofs
 斯坦福ZK课程，官网链接：[Zero Knowledge Proofs](https://zk-learning.org/)
-
-
 ### 其他课程
-* [[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 * [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
