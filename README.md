@@ -22,13 +22,14 @@
 ### ZK Shanghai 2023
 课程官网：[零知识证明工作坊 ZK Shanghai 2023](https://zkshanghai.xyz/)
 
-* [ ] [第1 课 初识零知识](https://www.youtube.com/watch?v=gTzXM1Se-38&ab_channel=SutuLabs)
+* [x] [第1 课 初识零知识](https://www.youtube.com/watch?v=gTzXM1Se-38&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%201/1-intro.pdf)
+  * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture1-homework.md)
 
 ### Modern Zero Knowledge Cryptography
 课程官网：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 
-* [ ] [Session 1 Introduction to ZK](https://www.youtube.com/watch?v=wj5fm_YvhEk&ab_channel=0xPARCFoundation)
+* [x] [Session 1 Introduction to ZK](https://www.youtube.com/watch?v=wj5fm_YvhEk&ab_channel=0xPARCFoundation)
   * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/slides/Modern%20ZK%20Crypto%20-%20Session%201.pdf)
 ### Zero Knowledge Proofs
 斯坦福ZK课程，官网链接：[Zero Knowledge Proofs](https://zk-learning.org/)
