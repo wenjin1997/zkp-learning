@@ -32,12 +32,11 @@
 \date{\today}
 \begin{document}
 \maketitle
+\tableofcontents
 
-
-\section{课堂笔记}
-\subsection*{01-课程简介}
+\section{课程简介}
 \includepdf[pages=2-6,nup=1x2]{01.pdf} 
-\subsection*{02-BTC-密码学原理}
+\section{BTC-密码学原理}
 加密货币（Crypto-currency）中主要用到密码学中的哈希函数和签名。
 \subsubsection*{1.哈希函数}
 哈希函数（hash function）有两个性质：
@@ -59,8 +58,8 @@ bitcoin中还要求哈希函数有\textbf{puzzle friendly}性质。由于哈希�
 在比特币中开户其实就是创建一个\textbf{公私钥对}(public key, private key)。公钥相当于银行账户，私钥相当于密码。在进行交易时，用私钥进行签名，说明是本人进行的，发布交易时也要发送公钥，可供他人进行验证。
 
 在这个过程中，产生公私钥对和签名时需要一个好的随机源(a good source of randomness)。
-\subsection*{03-BTC-数据结构}
-\subsubsection*{哈希指针}
+\section{BTC-数据结构}
+\subsubsection{哈希指针}
 hash pointer
 \begin{figure}[H]
     \centering
@@ -73,7 +72,7 @@ Block chain is a linked list using hash pointer.
 \end{figure}
 
 实现\textbf{tamper-evident log}，只要保存最后一个值，就知道前面有没有修改。
-\subsubsection*{Merkle tree}
+\subsubsection{Merkle tree}
 Merkle tree是用Hash指针代替普通指针的二叉树。
 \begin{figure}[H]
     \centering
@@ -90,7 +89,7 @@ Merkle tree的作用是可以提供Merkle proof，证明包含某种交易(\text
     \centering
     \includegraphics[width=0.5\textwidth]{./lecture3/img4.png} 
 \end{figure}
-\subsection*{04-BTC-协议}
+\section{BTC-协议}
 如果中央银行要发售电子货币，每张纸币可以由中央银行签名。
 \begin{figure}[H]
     \centering
@@ -144,7 +143,7 @@ CAP Theorem：任何一个分布式系统，以下3个性质中最多满足2个�
     \item P: Partition tolerance
 \end{itemize}
 Paxos协议满足Consistency性质。
-\subsubsection*{Consensus in BitCoin}
+\subsection{Consensus in BitCoin}
 重要的问题是：成员(membership)中谁拥有投票权。联盟链(hyperledger fabric)是只有加入链的成员有投票权。
 
 女巫攻击(sybil attack)：攻击方产生超过一半的用户。
@@ -165,7 +164,7 @@ mining: 挖矿
 miner: 矿工
 
 coinbase transaction 是产生币的唯一方法。每隔21万个区块，区块奖励减半，50BTC$\rightarrow$25BTC$\rightarrow$12.5BTC.
-\subsection*{05-BTC-实现}
+\section{BTC-实现}
 比特币是基于交易记录的模式(\textbf{transaction-based ledger})。
 
 \textbf{UTXO}: Unspent Transaction Output 还未花掉的交易的输出，为了检测双花，包含产生交易的哈希值以及在交易中的第几个。
@@ -214,19 +213,19 @@ selfish mining的分叉攻击，挖一长串，然后一下发布，这么做是
     \centering
     \includegraphics[width=0.5\textwidth]{./lecture5/img7.png} 
 \end{figure}
-\subsection*{06-BTC-网络}
+\section{BTC-网络}
 上层是application layer: BitCoin Block chain.下层是network layer: P2P Overlay Network.比特币中各节点是对等的。
 
 比特币网络设计原则：simple, robust(鲁棒), but not efficient.
 
 flooding, 邻居节点的选取是随机的，因此两个节点可能地理上相隔很远，网络传输慢，并不是非常有效。全节点维护一个等待上链的集合，第一次听到转发，会在该集合中删除该交易，后续不转发。区块大小限制在1M。网络传播是尽力交付(best effort)。
 
-\subsection*{07-BTC-挖矿难度}
+\section{BTC-挖矿难度}
 H(block header) $\le$ target，挖矿难度
 $$
 \text{difficulty} = \frac{\text{difficulty\_1\_target}}{\text{target}}
 $$
-难度1，target更大。
+难度1，target更大。挖矿难度与target成反比。
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{./lecture7/img1.png} 
@@ -240,7 +239,74 @@ $$
 \text{target} = \text{target} \times \frac{\text{actual time}}{\text{expected time}}
 $$
 其中，acutual time是最近挖出2016区块的时间，期望时间expected time = $2016 \times 10$，理想的挖出2016个区块的时间是两周。难度最大增长4倍，最小也是缩小4倍。
-\subsection*{08-BTC-挖矿}
-\subsection*{09-BTC-比特币脚本}
-\subsection*{10-BTC-分叉}
+\includepdf[pages=-,nup=1x2]{07-BTC.pdf} 
+\section{BTC-挖矿}
+全节点验证合法性包括：每个交易合法、发布区块难度以及延伸最长合法链。
+
+挖矿无记忆性，memoryless以及progress free。
+
+比特币安全性由密码学安全与共识机制保证，这个前提是大部分节点是好的节点。
+
+CPU$\rightarrow$ GPU挖矿$\rightarrow$ ASIC(Application Specific Integrated Circuit)芯片，ASIC芯片只能挖同一个mining puzzle的货币。有的币设计之初选择Alternative mining puzzle，设计出发点是ASIC resistance。
+
+矿池，一个矿主（pool manager）下面有许多矿工(miner)，矿主承担全节点其他功能。矿池的出现解决矿工收入不稳定的问题。通过工作量证明来分配收入，例如本来要求nonce使得前面60个为0，降低难度，如果求出该问题的nonce，则获得一个share，将almost vaild block提交给矿主，证明工作，最后根据提交的share数量分配奖励。
+
+转换矿池很容易，大型矿池如果有51\%算力，可发起攻击：
+\begin{itemize}
+    \item 分叉攻击
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{./lecture8/img1.png} 
+    \end{figure}
+    \item Boycott 封锁，和A有关交易都不包含，马上分叉
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.2\textwidth]{./lecture8/img2.png} 
+    \end{figure}
+\end{itemize}
+但是拥有51\%以上算力不能盗币，因为没有别人账户的私钥。如果强行发布不合法的区块，会造成分叉。
+
+\includepdf[pages=-,nup=1x2]{08-BTC.pdf}  
+\section{09-BTC-比特币脚本}
+交易结构：
+\begin{itemize}
+    \item version: 比特币协议版本号
+    \item locktime: 生效时间
+    \item blockhash: 交易所在区块的hash值
+    \item blocktime: 区块产生时间
+\end{itemize}
+交易的输入：
+\begin{itemize}
+    \item "txid"与"vout"，表示币的来源
+    \item "scriptSig"表示输入脚本
+\end{itemize}
+交易的输出：
+\begin{itemize}
+    \item "value"：输出金额
+    \item "n"：序号
+    \item "scriptPubKey": 输出脚本
+    \item "reqSigs":需要多少个签名
+    \item "type": 输出类型
+\end{itemize}
+redeemScript: 赎回脚本
+
+多重签名：
+\begin{itemize}
+    \item 多重签名要求N个人中有M个签名
+    \item x是代码实现的bug，往栈里多压入一个元素
+    \item 输入脚本中M个签名的顺序要与输出脚本中的pubkey相同
+\end{itemize}
+
+用P2SH实现多重签名的好处是在用户端，也就是输出脚本处，只需要得知赎回脚本的哈希值即可，不需要N个公钥。同时赎回脚本中方便修改N与M的值。
+
+Proof of Burn
+\begin{itemize}
+    \item RETURN: 无条件返回错误，可用于证明销毁比特币
+    \item 可以往区块链中写入内容，digital commitment，比如用作知识产权。还有另一个域coinbase域，可以往区块链中写入内容。
+\end{itemize}
+
+在实际中，操作中含有前缀，例如OP\_CHECKSIG、OP\_DUP，课程中做了简化。
+
+\includepdf[pages=-,nup=1x2]{09-BTC.pdf}  
+\section{BTC-分叉}
 \end{document}

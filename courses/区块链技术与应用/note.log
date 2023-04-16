@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.9.12)  11 APR 2023 21:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.9.12)  16 APR 2023 21:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -666,7 +666,10 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) (./note.toc)
+\tf@toc=\write4
+\openout4 = `note.toc'.
+
 File: 01.pdf Graphic file (type pdf)
 <use 01.pdf>
 File: 01.pdf Graphic file (type pdf)
@@ -717,11 +720,16 @@ File: 01.pdf Graphic file (type pdf)
  [4]
 File: ./lecture2/lecture1-1.png Graphic file (type bmp)
 <./lecture2/lecture1-1.png>
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 62.
+
 File: ./lecture3/img1.png Graphic file (type bmp)
 <./lecture3/img1.png>
 LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/sl' in size <10> not available
-(Font)              Font shape `TU/SongtiSCLight(0)/m/it' tried instead on input line 69.
- [5]
+(Font)              Font shape `TU/SongtiSCLight(0)/m/it' tried instead on input line 68.
+[5]
 File: ./lecture3/img2.png Graphic file (type bmp)
 <./lecture3/img2.png>
 File: ./lecture3/img3.png Graphic file (type bmp)
@@ -750,9 +758,9 @@ File: ./lecture4/img2.png Graphic file (type bmp)
 <./lecture4/img2.png>
 File: ./lecture4/img3.png Graphic file (type bmp)
 <./lecture4/img3.png>
+ [8]
 File: ./lecture4/img4.png Graphic file (type bmp)
 <./lecture4/img4.png>
- [8]
 File: ./lecture4/img5.png Graphic file (type bmp)
 <./lecture4/img5.png>
 File: ./lecture4/img6.png Graphic file (type bmp)
@@ -824,17 +832,553 @@ File: ./lecture5/img7.png Graphic file (type bmp)
 <./lecture5/img7.png>
 File: ./lecture7/img1.png Graphic file (type bmp)
 <./lecture7/img1.png>
- [16] [17] (./note.aux)
+ [16]
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 1>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 1>
+ [17]
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 1>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 1>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 2>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 2>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 1>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 2>
+ [18]
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 3>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 3>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 4>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 4>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 3>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 4>
+ [19]
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 5>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 5>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 6>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 6>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 5>
+File: 07-BTC.pdf Graphic file (type pdf)
+<use 07-BTC.pdf, page 6>
+ [20]
+File: ./lecture8/img1.png Graphic file (type bmp)
+<./lecture8/img1.png>
+File: ./lecture8/img2.png Graphic file (type bmp)
+<./lecture8/img2.png>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 1>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 1>
+ [21]
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 1>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 1>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 2>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 2>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 1>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 2>
+ [22]
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 3>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 3>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 4>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 4>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 3>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 4>
+ [23]
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 5>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 5>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 1>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 1>
+File: 08-BTC.pdf Graphic file (type pdf)
+<use 08-BTC.pdf, page 5>
+ [24]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 1>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 1>
+ [25]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 1>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 1>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 2>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 2>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 1>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 2>
+ [26]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 3>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 3>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 4>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 4>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 3>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 4>
+ [27]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 5>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 5>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 6>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 6>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 5>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 6>
+ [28]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 7>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 7>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 8>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 8>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 7>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 8>
+ [29]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 9>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 9>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 10>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 10>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 9>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 10>
+ [30]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 11>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 11>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 12>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 12>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 11>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 12>
+ [31]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 13>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 13>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 14>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 14>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 13>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 14>
+ [32]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 15>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 15>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 16>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 16>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 15>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 16>
+ [33]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 17>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 17>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 18>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 18>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 17>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 18>
+ [34]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 19>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 19>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 20>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 20>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 19>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 20>
+ [35]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 21>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 21>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 22>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 22>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 21>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 22>
+ [36]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 23>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 23>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 24>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 24>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 23>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 24>
+ [37]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 25>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 25>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 26>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 26>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 25>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 26>
+ [38]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 27>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 27>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 28>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 28>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 27>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 28>
+ [39]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 29>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 29>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 30>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 30>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 29>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 30>
+ [40]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 31>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 31>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 32>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 32>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 31>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 32>
+ [41]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 33>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 33>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 34>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 34>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 33>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 34>
+ [42]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 35>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 35>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 36>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 36>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 35>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 36>
+ [43]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 37>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 37>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 38>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 38>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 37>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 38>
+ [44]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 39>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 39>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 40>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 40>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 39>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 40>
+ [45]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 41>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 41>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 42>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 42>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 41>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 42>
+ [46]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 43>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 43>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 44>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 44>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 43>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 44>
+ [47]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 45>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 45>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 46>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 46>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 45>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 46>
+ [48]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 47>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 47>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 48>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 48>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 47>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 48>
+ [49]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 49>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 49>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 50>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 50>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 49>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 50>
+ [50]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 51>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 51>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 52>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 52>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 51>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 52>
+ [51]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 53>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 53>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 54>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 54>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 53>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 54>
+ [52]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 55>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 55>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 56>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 56>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 55>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 56>
+ [53]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 57>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 57>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 58>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 58>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 57>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 58>
+ [54]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 59>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 59>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 60>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 60>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 59>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 60>
+ [55]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 61>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 61>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 62>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 62>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 61>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 62>
+ [56]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 63>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 63>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 64>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 64>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 63>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 64>
+ [57]
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 65>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 65>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 66>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 66>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 65>
+File: 09-BTC.pdf Graphic file (type pdf)
+<use 09-BTC.pdf, page 66>
+ [58] [59] (./note.aux)
 Package rerunfilecheck Info: File `note.out' has not changed.
-(rerunfilecheck)             Checksum: AFEF2903A1E0D2A2811CF31F039632A3;75.
+(rerunfilecheck)             Checksum: B8D616B83145D50F137BC8D6CF329F2D;1273.
  ) 
 Here is how much of TeX's memory you used:
- 16522 strings out of 476919
- 342085 string characters out of 5821840
- 680742 words of memory out of 5000000
- 36205 multiletter control sequences out of 15000+600000
- 410350 words of font info for 81 fonts, out of 8000000 for 9000
+ 16713 strings out of 476919
+ 346952 string characters out of 5821840
+ 682164 words of memory out of 5000000
+ 36387 multiletter control sequences out of 15000+600000
+ 410342 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,17n,104p,409b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on note.pdf (17 pages).
+Output written on note.pdf (59 pages).
