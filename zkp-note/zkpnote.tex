@@ -15,6 +15,12 @@
 \usepackage{tabularx}
 \usepackage{color}
 \usepackage[colorlinks,linkcolor=blue]{hyperref} % 使用超链接
+\usepackage{pdfpages}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.8}
+\usepackage{graphicx} %插入图片的宏包
+\usepackage{float} %设置图片浮动位置的宏包
+\usepackage{subfigure} %插入多图时用子图显示的宏包
 
 \newtheorem{definition}{定义}
 \newtheorem{lemma}{引理}
@@ -26,8 +32,9 @@
 \date{\today}
 \begin{document}
 \maketitle
+\tableofcontents
 
-{\color{blue}To-Do}
+\section{TO-DO}
 \begin{itemize}
 	\item 线性变换
 	\item 不可约多项式
@@ -35,20 +42,20 @@
 
 \section{基本概念}
 \subsection{数学概念}
-\subsubsection{参考资料}
+\subsubsection{抽象代数}
+参考资料
 \begin{itemize}
 	\item 《抽象代数》张贤科 { } 清华大学出版社
 	\item 《高等代数》（第三版）北京大学数学系几何与代数教研室
 \end{itemize}
 
-\subsubsection{抽象代数}
 \begin{theorem}[古典代数学基本定理]
 	任意$n$次方程$x^n+a_1x^{n-1}+ \cdots + a_{n-1}x + a_n = 0$一定有复数解（这里$a_1, \cdots, a_n$为任意复数，整数$n \ge 1$）.
 \end{theorem}
 
-一个{\color{blue}集合}就是一些互异的确定的对象全体，其中每个对象称为一个成员或元素，简称为元，有时也称为点。
+一个\textbf{集合}就是一些互异的确定的对象全体，其中每个对象称为一个成员或元素，简称为元，有时也称为点。
 
-{\color{blue}映射三要素}：定义域、值域、对应规则。对任意两个不同的原像，它们有不同的像，则为{\color{blue}单射}。
+\textbf{映射三要素}：定义域、值域、对应规则。对任意两个不同的原像，它们有不同的像，则为\textbf{单射}。
 
 以$(a,b)$或gcd$(a,b)$记$a,b$的正的最大公因子。
 \begin{lemma}\label{lemma:abqr}
@@ -76,7 +83,7 @@
 \end{theorem}
 
 \begin{definition}[《抽象代数》张贤科P17]
-	一个{\color{blue}群}就是一个非空集合$G$，且其元素之间有一种运算，此运算将$G$中任意元素$a$，$b$（可以相等）对应于$G$中的一个元素（记为$a \cdot b$或$ab$），而且满足如下4个条件（称为{\color{blue}群的公理}）：
+	一个\textbf{群}就是一个非空集合$G$，且其元素之间有一种运算，此运算将$G$中任意元素$a$，$b$（可以相等）对应于$G$中的一个元素（记为$a \cdot b$或$ab$），而且满足如下4个条件（称为\textbf{群的公理}）：
 	\begin{enumerate}
 		\item[（G1）]（封闭性）$ab$仍然在$G$中（对任意$a$，$b \in G$）；
 		\item[（G2）]（结合律）$a(bc)=(ab)c$（对任意$a,b,c \in G$）；
@@ -84,21 +91,39 @@
 		\item[（G4）]（可逆性）对每个元素$a \in G$，存在$a' \in G$使$a'a = a a' = e$.
 	\end{enumerate}
 \end{definition}
-满足交换律的群称为{\color{blue}交换群}，或{\color{blue}Abel群}。
+满足交换律的群称为\textbf{交换群}，或\textbf{Abel群}。
 
-由一个元素$a$生成的子群，称为{\color{blue}循环子群}，记为$\langle a \rangle $.如果群$G=\langle a \rangle$，则$G$称为{\color{blue}循环群}.
+由一个元素$a$生成的子群，称为\textbf{循环子群}，记为$\langle a \rangle $.如果群$G=\langle a \rangle$，则$G$称为\textbf{循环群}.
 
 
+\begin{theorem}[算术基本定理，参考维基百科]
+	算术基本定理，又称为正整数的唯一分解定理，即：每个大于1的自然数，要么本身就是质数，要么可以写为2个或以上的质数的积，而且这些质因子按大小排列之后，写法仅有一种方式。
+\end{theorem}
 
-{\color{red}充分条件与必要条件}
+\textbf{充分条件与必要条件}
 \begin{itemize}
 	\item 由条件能推出结论，但由结论推不出这个条件，这个条件就是充分条件。
 	\item 如果能由结论推出条件，但由条件推不出结论,此条件为必要条件。
 	\item 如果既能由结论推出条件，又能有条件推出结论,此条件为充要条件。
 \end{itemize}
 
-\begin{theorem}[算术基本定理，参考维基百科]
-	算术基本定理，又称为正整数的唯一分解定理，即：每个大于1的自然数，要么本身就是质数，要么可以写为2个或以上的质数的积，而且这些质因子按大小排列之后，写法仅有一种方式。
+\subsubsection{原根}
+参考\href{https://oi-wiki.org/math/number-theory/primitive-root/#%E5%8E%9F%E6%A0%B9}{oi-wiki原根}，一些数学概念如下：
+\begin{definition}
+	\textbf{阶}：由欧拉定理可知，对 $a\in \mathbb{Z}$，$m\in\mathbb{N}^{*}$，若 $\gcd(a,m)=1$，则 $a^{\varphi(m)}\equiv 1\pmod m$。
+	因此满足同余式 $a^n \equiv 1 \pmod m$ 的最小正整数 $n$ 存在，这个 $n$ 称作 $a$ 模 $m$ 的阶，记作 $\delta_m(a)$。
+\end{definition}
+
+\begin{definition}
+	\textbf{原根}：设 $m \in \mathbb{N}^{*}$，$a\in \mathbb{Z}$。若 $\gcd(a,m)=1$，且 $\delta_m(a)=\varphi(m)$，则称 $a$ 为模 $m$ 的原根。
+\end{definition}
+
+\begin{theorem}[原根判定定理]
+	设 $m \geqslant 3$, $\gcd(a,m)=1$，则 $a$ 是模 $m$ 的原根的充要条件是，对于 $\varphi(m)$ 的每个素因数 $p$，都有 $a^{\frac{\varphi(m)}{p}}\not\equiv 1\pmod m$。
+\end{theorem}
+
+\begin{theorem}[原根存在定理]
+	一个数 m 存在原根当且仅当 $m=2,4,p^{\alpha},2p^{\alpha}$，其中 $p$ 为奇素数，$\alpha\in \mathbb{N}^{*}$。
 \end{theorem}
 
 \subsection{计算复杂度}
