@@ -16,9 +16,10 @@
 - [x] [4 承诺、零知识证明、BulletProof范围证明、Diffie-Hellman密钥协商](https://www.bilibili.com/video/BV1aX4y1R7P4/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
   * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC4%E8%AF%BE%20%E6%89%BF%E8%AF%BA%E3%80%81%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E%E3%80%81BulletProof%E8%8C%83%E5%9B%B4%E8%AF%81%E6%98%8E%E3%80%81Diffie-Hellman%E5%AF%86%E9%92%A5%E5%8D%8F%E5%95%86.pdf)
   * [笔记](/courses/cryptography-lynndell/note/note%20%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97%20%E7%AC%AC4%E8%AF%BE%20%E6%89%BF%E8%AF%BA%E3%80%81%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E%E3%80%81BulletProof%E8%8C%83%E5%9B%B4%E8%AF%81%E6%98%8E%E3%80%81Diffie-Hellman%E5%AF%86%E9%92%A5%E5%8D%8F%E5%95%86.pdf)
-#### 多签系列
-- [ ] [5 Li17两方签名与密钥刷新](https://www.bilibili.com/video/BV1Xa4y1N7cX/?spm_id_from=333.788&vd_source=d6d5daa7e5c1f2e2ffc186195640b61d)
+#### ECDSA多签系列
+- [x] [5 Li17两方签名与密钥刷新](https://www.bilibili.com/video/BV1Xa4y1N7cX/?spm_id_from=333.788&vd_source=d6d5daa7e5c1f2e2ffc186195640b61d)
   * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%9A%E6%96%B9%E7%AD%BE%E5%90%8D%E7%B3%BB%E5%88%97%20%E7%AC%AC5%E8%AF%BE%20Li17%E4%B8%A4%E6%96%B9%E7%AD%BE%E5%90%8D%E5%8F%8A%E5%AF%86%E9%92%A5%E5%88%B7%E6%96%B0%E5%8D%8F%E8%AE%AE.pdf)
+  * [笔记](/courses/cryptography-lynndell/note/note%20%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%9A%E6%96%B9%E7%AD%BE%E5%90%8D%E7%B3%BB%E5%88%97%20%E7%AC%AC5%E8%AF%BE%20Li17%E4%B8%A4%E6%96%B9%E7%AD%BE%E5%90%8D%E5%8F%8A%E5%AF%86%E9%92%A5%E5%88%B7%E6%96%B0%E5%8D%8F%E8%AE%AE.pdf)
 
 ### ZK Shanghai 2023
 课程官网：[零知识证明工作坊 ZK Shanghai 2023](https://zkshanghai.xyz/)
