@@ -267,7 +267,7 @@ CPU$\rightarrow$ GPU挖矿$\rightarrow$ ASIC(Application Specific Integrated Cir
 但是拥有51\%以上算力不能盗币，因为没有别人账户的私钥。如果强行发布不合法的区块，会造成分叉。
 
 \includepdf[pages=-,nup=1x2]{08-BTC.pdf}  
-\section{09-BTC-比特币脚本}
+\section{BTC-比特币脚本}
 交易结构：
 \begin{itemize}
     \item version: 比特币协议版本号
@@ -309,4 +309,126 @@ Proof of Burn
 
 \includepdf[pages=-,nup=1x2]{09-BTC.pdf}  
 \section{BTC-分叉}
+\begin{itemize}
+    \item state fork：当前状态产生分歧，例如分叉攻击(forking attack)，也叫做deliberate fork。
+    \item protocol fork:对协议产生分歧
+\end{itemize}
+还有一种分类是分为硬分叉和软分叉。
+\subsection{hard fork}
+例如block size limit的改变，原来为1M，当block size limit为1M时，一个交易大约是250个字节，一个block可以产生1000,000/250 = 4000个交易，而一个block产生需要10分钟，因此每秒产生4000/(60 $\times$ 10) $\approx $7个交易。这个交易产生的数量太少，并且会有延迟，一个交易可能这个区块没写进去，会等到下一个区块，这就要等待10分钟。考虑block size limit从1M $\rightarrow$ 4M。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./lecture10/img1.png} 
+\end{figure}
+如上图所示，拥有大多数算力节点承认区块大小限制为4M，旧节点承认区块大小为1M。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./lecture10/img2.png} 
+\end{figure}
+这样会造成永久性分叉，旧节点不承认新节点，会按照原来的链挖，而新节点也是承认1M区块大小的。如果出现下面的链进行交易回放，如C$\rightarrow$B，可以加上chainID来解决这个问题。
+\subsection{soft fork}
+比特币协议中加一些限制，使得原来合法的交易变得不合法，造成了软分叉。例如区块的大小限制1M变为0.5M。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./lecture10/img3.png} 
+\end{figure}
+软分叉是临时的，旧节点也认可新节点的链，旧节点会在最长合法链后面挖，不然自己就白挖了。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./lecture10/img4.png} 
+\end{figure}
+现实中的软分叉：给目前域赋予新的含义，例如coinbase域。原来调整extra nonce，有4bytes，搜索空间是$2^{32}$，可以加上coinbase的前8bytes，搜索空间变为$2^{96}$。
+
+我们知道Merkle proof可以证明某个交易是否在区块里，但是如果想证明某个账户A上有多少钱，全节点可以查看账户A在UTXO对应的输出，对于区块链钱包，也就是轻节点，可以向全节点发出一个请求，全节点返回一个结果，但无法证明该结果是否正确。解决方法是将UTXO组织成一个Merkle tree, 算出根哈希值，放在coinbase里，coinbase里的内容会放在block header里，因此也会改变Merkle tree的根哈希值，当做Merkle proof时，也就验证了结果是否正确。
+
+比特币中著名软分叉例子：P2SH(Pay to Script Hash)，支付给一个赎回脚本(redeem Script)的哈希。
+\subsection{小结}
+\textbf{hard fork}：只有所有节点都更新软件，系统中才不会出现永久性分叉。
+
+\textbf{soft fork}：只要系统中拥有半数以上算力的节点更新了软件，系统中就不会有永久性分叉。
+
+\section{BTC-问答}
+\begin{itemize}
+    \item 转账交易的时候，如果接收者不在线怎么办？
+        
+    不需要接收者在线。
+    \item 全节点收到一个交易，有没有可能这个交易的接收地址是以前从来没有听说过的。
+    
+    可能。比特币账户创建本地产生公私钥对。
+    \item 如果账户的私钥丢失了该怎么办？
+    
+    私钥丢失没办法，账户上的钱变成死钱，没办法取出来。
+
+    注：交易所一般要经过身份验证，私钥实际是交易所保管。加密货币的交易所目前缺少监管。交易所Mt. Gox被黑客攻击。
+    \item 如果你的私钥泄漏了怎么办？比如账户上出现了可疑交易。
+    
+    应该将账户上的钱尽快转到另一个安全的账户上。
+
+    \item 如果转账的时候写错了地址怎么办？
+    
+    没有办法取消已经发布的交易。
+
+    注：digital commitment，用Proof of Burn，将哈希值放在OP\_RETURN后面。A$\rightarrow$B，有人将转账的哈希值变成digital commitment生成的哈希值。这个做法不提倡，转账交易会永久保存在UTXO中，对全节点不友好。
+
+    \item OP\_RETURN无条件返回错误，怎么写到区块链中？
+    
+    OP\_RETURN写在当前脚本的输出里，验证当前交易的合法性时，是不会执行OP\_RETURN的。有人想花这笔交易的钱时，才会执行这个交易的输出脚本。
+
+    \item 会不会有的矿工偷答案？你怎么知道是哪个矿工最先找到这个符合要求的nonce？
+    
+    发布的区块里有coinbase tx，有一个到矿工A的收款地址，如果要偷答案，就要改变收款地址，但是这会改变Merkle tree的根哈希值。而nonce在block header，如果改变，原来找到的nonce就作废了。
+
+    \item 你怎么知道交易费该给哪个矿工？
+    
+    事先不需要知道哪个矿工得到交易费。只要total inputs > total outputs，差额就是交易费。
+\end{itemize}
+\includepdf[pages=-,nup=1x2]{11-BTC.pdf} 
+
+\section{BTC-匿名性}
+\subsection{匿名与隐私}
+Bitcoin and anonymity
+匿名和隐私(privacy)保护联系在一起。
+
+比特币中用的化名pseudonymity，比特币的匿名不是真的匿名。匿名性没有现金好，但是现金不容易保管和运输。如果银行用化名，匿名性要比比特币好。区块链的账本是完全公开的，银行的账本不是完全公开的。
+
+不同账户之间关联有可能破坏匿名性。网上购物，允许有多个输入和输出。
+
+Inputs: addr1(4BTC), addr2(5BTC)
+
+Outputs: addr3(6BTC), addr4(3BTC)
+
+addr1和adder2很有可能是同一个人的。输出地址一般有一个找零钱的地址。addr4是找零地址，也可以将输入地址和输出地址关联。常用的比特币钱包就几种。找到其中产生地址的规律就可以关联起来。
+
+地址账户和现实世界的身份产生关联。任何比特币货币和实体世界发生联系，就可能泄漏身份。例如资金的转入和转出、用比特币做支付。商家支持比特币支付，延迟大，交易费贵。
+
+信用卡号码取哈希值公开，但是通过几次特定时间消费，进行过滤后可以定位到人。比特币交易记录都是公开的。
+
+中本聪的匿名性保护的最好，没有花费比特币。
+
+网站Silk road，有人管它叫eBay for illegal drugs。卖的是违禁品，支付用比特币，网络层是TOR，美国用匿名邮寄服务。运行两三年就被查封了。第二版Silk road 2。比特币的匿名性没有我们想象中的那么好。
+
+hide your identity for whom?不想向谁暴露身份？如果是向邻居保持匿名，比较容易实现。
+
+采取什么样的方法尽可能提高匿名性？
+
+application layer
+
+--------
+
+network layer
+
+提高匿名性从两个方面入手。网络层的匿名性比较好解决，普遍的是多路径转发，洋葱路由TOR就是这个原理。应用层把各个不同的币混在一起（coin mixing），让人分不清这些币从哪里来的，真正实施起来有些困难。在区块链里目前没有信誉度高的coin mixing服务，因为它们也要匿名，跑路就没办法了。有一些应用带有coin mixing性质，比如在线钱包，但在线钱包并不保证履行这个功能。加密货币的交易所天然的有coin mixing性质，前提是交易所不会泄漏记录。
+
+保护隐私难度大，本质是区块链账本公开且不可篡改。
+
+\subsection{零知识证明}
+签名证明知道私钥，但是泄漏了私钥的签名。是不是零知识证明有点争议。
+
+\textbf{同态隐藏}
+\begin{itemize}
+    \item 加密函数值不会出现碰撞。
+    \item 加密函数不可逆。和哈希函数里的hiding property类似。
+    \item 同态运算。
+\end{itemize}
+\includepdf[pages=-,nup=1x2]{12-BTC.pdf} 
 \end{document}
