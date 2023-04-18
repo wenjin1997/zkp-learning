@@ -38,7 +38,7 @@
 \includepdf[pages=2-6,nup=1x2]{01.pdf} 
 \section{BTC-密码学原理}
 加密货币（Crypto-currency）中主要用到密码学中的哈希函数和签名。
-\subsubsection*{1.哈希函数}
+\subsection{哈希函数}
 哈希函数（hash function）有两个性质：
 \begin{itemize}
     \item \textbf{collision resistance (or collision free)}：不能在多项式时间内找到$x \neq y$，使得$H(x)=H(y)$。这条性质说明没有办法篡改内容而又不被检测出来。
@@ -54,12 +54,12 @@ bitcoin中还要求哈希函数有\textbf{puzzle friendly}性质。由于哈希�
     \includegraphics[width=0.4\textwidth]{./lecture2/lecture1-1.png} 
 \end{figure}
 输出空间很大，但是目标空间很小，这只能一个一个试nonce的值。这也是工作量证明(proof of work)。虽然挖矿很难，但是验证比较容易(difficult to solve, but easy to verify)。
-\subsubsection*{2. 签名}
+\subsection{签名}
 在比特币中开户其实就是创建一个\textbf{公私钥对}(public key, private key)。公钥相当于银行账户，私钥相当于密码。在进行交易时，用私钥进行签名，说明是本人进行的，发布交易时也要发送公钥，可供他人进行验证。
 
 在这个过程中，产生公私钥对和签名时需要一个好的随机源(a good source of randomness)。
 \section{BTC-数据结构}
-\subsubsection{哈希指针}
+\subsection{哈希指针}
 hash pointer
 \begin{figure}[H]
     \centering
@@ -72,7 +72,7 @@ Block chain is a linked list using hash pointer.
 \end{figure}
 
 实现\textbf{tamper-evident log}，只要保存最后一个值，就知道前面有没有修改。
-\subsubsection{Merkle tree}
+\subsection{Merkle tree}
 Merkle tree是用Hash指针代替普通指针的二叉树。
 \begin{figure}[H]
     \centering
