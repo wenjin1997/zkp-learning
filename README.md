@@ -35,6 +35,22 @@
   * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/slides/Modern%20ZK%20Crypto%20-%20Session%201.pdf)
 ### Zero Knowledge Proofs
 斯坦福ZK课程，官网链接：[Zero Knowledge Proofs](https://zk-learning.org/)
+* [x] [Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+  * [slides](/courses/Zero%20Knowledge%20Proofs/lecture1/Lecture1-2023-slides.pdf)
+* [ ] [Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+* [ ] Libraries and Compilers to build ZKP
+* [ ] Interactive Proofs (IP)
+* [ ] Plonk Interactive Oracle Proofs (IOP)
+* [ ] Discrete-log-based Polynomial Commitments
+* [ ] ZKP based on Error-Correcting Codes
+* [ ] Transparent ZKP
+* [ ] Linear Probabilistically Checkable Proofs (PCP) 
+* [ ] Recursive SNARKs, Aggregation and Accumulation
+* [ ] Theoretical Foundations & Recent Theoretical Advancement
+* [ ] Overview of ZKP Applications & zkRollup and zkEVM
+* [ ] Privacy-preserving Blockchains
+* [ ] Formal Verification of ZKP
+* [ ] Hardware Acceleration of ZKP 
 ### 其他课程
 * [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
 ## 文章
