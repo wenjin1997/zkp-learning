@@ -33,7 +33,6 @@
 \begin{document}
 \maketitle
 \tableofcontents
-
 \section{课程简介}
 \includepdf[pages=2-6,nup=1x2]{01.pdf} 
 \section{BTC-密码学原理}
@@ -431,4 +430,92 @@ network layer
     \item 同态运算。
 \end{itemize}
 \includepdf[pages=-,nup=1x2]{12-BTC.pdf} 
+\section{BTC-比特币引发的思考}
+\subsection{哈希指针}
+区块链中的哈希指针怎么传播？
+
+指针只和本地机器相关。实际系统中用的只有哈希，指针只是一个形式说法。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./lecture13/img1.png} 
+\end{figure}
+ 
+怎么找到区块内容？全节点将这些存在(key, value)数据库中，常用的是levelDB数据库。
+
+\subsection{区块恋}
+截断私钥的做法会降低账户的安全性。比特币中的安全和私钥的长度相关，256位，但是如果截断，只需要猜另一半的私钥就能破解。对多个人的账户，不要用截断私钥的方法，用多重签名MULTISIG。
+
+区块恋中可能会造成死钱，UTXO中的死钱是普遍问题。
+\subsection{分布式共识}
+为什么比特币系统能够绕过分布式共识中那些不可能结论？
+
+严格地说，比特币并没有取得真正意义下的共识。例如分叉。理论和实际有一定距离。
+
+远程服务器连不上，如何区分是垮掉还是运行缓慢？
+
+分布式理论证明在异步（通讯的延迟没有上限）的环境中，不可能区分某台远程服务器是垮掉还是运行缓慢。实际中可以给服务器加一个电话线，可以拨号上网。
+
+\subsection{比特币的稀缺性}
+挖矿的收益要大于挖矿的开销。比特币早期挖矿难度低，出块奖励多。
+
+总量固定的东西实际不适合作为货币。一个好的货币要有通货膨胀的功能。
+
+\subsection{量子计算}
+量子计算技术离实用还有很大距离。量子计算对传统金融的冲击更大。
+
+比特币中并没有将账户的公钥直接暴露出来，而是用公钥的哈希。即使用量子计算机，也没办法进行哈希的逆运算。从安全角度来看，比特币中的地址用过一次后就不要再用了。即使是公钥，也不要随便泄漏。
+
+\section{ETH-以太坊概述}
+以太坊的出块时间变为十几秒。同时改变了mining puzzle，对内存要求高，叫memory hard mining puzzle，限定了ASIC芯片的使用(ASIC resistance)。用权益证明(proof of stake)来替代工作量证明(proof of work)。增加了对智能合约(smart contract)的支持。
+
+BitCoin: decentralized currency, BTC 最小单位Satoshi
+
+Ethereum: decentralized contract, ETH 最小单位Wei
+
+去中心化的货币，可以跨国转账。去中心化的合同，如果合约的签署方来自各国，可以用智能合约。就算是同一个司法管辖权内，司法手段也可能比较麻烦。智能合约的代码一经发布到区块链中，就不可以篡改。
+
+\section{ETH-账户}
+A $\rightarrow$ B(10BTC)，要说明币的来源。B $\rightarrow$ C(3BTC)，不说明的话剩下的7个BTC当成gas费了，所以剩下的币要转给自己另外的账户B $\rightarrow$ B‘(7BTC)。
+
+以太坊采用基于账户的模型(account-based ledger)。A $\rightarrow$ B(10ETH)，检查交易的合法性只用检查A账户上的钱是否足够，不用说明币的来源。比特币面临的挑战是double spending attack，以太坊天然能防御这一点。
+
+账户的余额不能随便改，因为账户的余额在全节点中维护。
+
+replay attack，重放攻击，A $\rightarrow$ B(10ETH)，假设B是恶意的，再把这个交易广播一次，将A的钱扣了两次。比特币中不会出现repaly attack，因为这会导致double spending。以太坊中加一个nonce，记录交易次数，发布交易时加上这个nonce，整个内容由账户进行签名。系统中会维护账户的余额和nonce值。
+
+以太坊中有两类账户，一类是外部账户externally owner account。外部账户状态有balance、nonce(实际是计数器)。通过公私钥对控制。第二类账户是合约账户smart contract account。合约账户不能主动发起一个交易。合约账户有balance、nonce、code、storage。合约账户可以被调用。
+
+以太坊的创始人Vitalik。以太坊支持合约，要求参与者有稳定的身份。用合约实现金融衍生品(financial derivative)。
+
+\section{ETH-状态树}
+以太坊中将账户地址映射到状态，addr $\rightarrow$ state。地址是160bits，一般表示成40个十六进制的数。
+
+\textbf{以太坊中如何证明某个账户的余额是多少？}
+
+比特币中是对一个区块中的几百到几千个交易构成一个新的Merkle tree。而在以太坊中，如果将所有的账户-状态组织成哈希表结果，将账户组织成Merkle tree，这样需要包括的账户数太多。Merkle tree除了证明某个交易在区块中，还有一个作用是保持全节点中内容的一致性，这也是为什么比特币中要将Merkle tree的根哈希值写在块头里。
+
+如果直接将账户-状态构建成一个Merkle tree，问题在于Merkle tree没有提供一个高效的查找和更新的方法。还有一个问题是Merkle tree要不要排序(sorted Merkle tree)？不排序会导致构建Merkle tree是不一样的，算出的根哈希值也不相同。新节点产生是随机的，会插入到Merkle tree中，导致Merkle tree需要更新，可能大半个树需要重构，加入的代价比较大。
+
+trie 字典树，从retrieval中来。分叉数目branching factor。以太坊中是17(加上结束标志位)。trie中地址长度相同，也就是查找长度相同。trie中不会出现碰撞。trie会得到相同的树。更新操作具有局部性，用trie只用访问一个分支。trie的存储会增大。
+
+Patricia tree/trie。经过路径压缩的前缀树。如果新插入一个节点，原来压缩的路径可能会展开。插入的节点的键值分布稀疏，压不压缩效果比较大。例如单词misunderstanding、decentralization、disintermediation(去中间商)。
+
+MPT(Merkle Patricia tree)。把普通指针换成哈希指针。可以计算出根哈希值，写在block header里。根哈希值的作用：防止篡改以及Merkle proof（证明账户余额、证明某个键值不在MPT中）。
+
+以太坊中用的是Modified MPT。合约账户中的存储用的也是MPT。
+
+\textbf{为什么每次改变是新建一个分支而不是直接在原来的MPT中更新数据？}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{./lecture16/img1.png} 
+\end{figure}
+比特币中A $\rightarrow$ B(10BTC),回滚比较容易。以太坊中有智能合约，是图灵完备的，以太坊中如果不保存以前的状态，推算出原来的状态是比较难的，要想支持回滚，必须保存历史状态。
+
+以太坊有三棵树：状态树、交易树、收据树。
+
+状态树中保存的是(key,value)。value要经过序列化(RLP，Recursive Length Prefix)再存储。protocol buffer，简称protobuf，作序列化的库。RLP只支持nested array of bytes，字节数组，可以嵌套。
+
+\includepdf[pages=-,nup=1x2]{16-ETH.pdf} 
+
+
 \end{document}
