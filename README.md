@@ -1,4 +1,5 @@
 # 零知识证明
+一些零知识证明相关知识补充及总结见[zkpnote](/zkp-note/zkpnote.pdf)。
 ## 课程
 ### 区块链技术与应用
 这门课程主要介绍了比特币和以太坊，对了解区块链有很大的帮助。课程官网见[这里](http://zhenxiao.com/blockchain/)，bilibili课程视频见[这里](https://www.bilibili.com/video/BV1Vt411X7JF?p=1&vd_source=c6586ed2410fae637f393017e00f4845)。
@@ -33,11 +34,23 @@
 
 * [x] [Session 1 Introduction to ZK](https://www.youtube.com/watch?v=wj5fm_YvhEk&ab_channel=0xPARCFoundation)
   * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/slides/Modern%20ZK%20Crypto%20-%20Session%201.pdf)
+* [ ] Session 2 Circom 1
+* [ ] Session 3 Mathematical building blocks
+* [ ] Session 4 Circom 2
+* [ ] Session 5 Commitment Schemes
+* [ ] Session 6 Algorithms for Efficient Cryptographic Operations 
+* [ ] Session 7 Arithmetizations
+* [ ] Session 8 PLONK and polynomial identities
+* [ ] Session 9 Proving systems stack; recursion and composition.
+* [ ] Session 10 Applied ZK Constructions 1
+* [ ] Session 11 Applied ZK Constructions 
+* [ ] Session 12 Student and Staff Demos
 ### Zero Knowledge Proofs
 斯坦福ZK课程，官网链接：[Zero Knowledge Proofs](https://zk-learning.org/)
 * [x] [Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture1/Lecture1-2023-slides.pdf)
-* [ ] [Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+* [x] [Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+  * [slides](/courses/Zero%20Knowledge%20Proofs/lecture2/Lecture2-2023.pdf)
 * [ ] Libraries and Compilers to build ZKP
 * [ ] Interactive Proofs (IP)
 * [ ] Plonk Interactive Oracle Proofs (IOP)
@@ -154,6 +167,10 @@
   - [ ] [Hyrax](https://eprint.iacr.org/2017/1132.pdf)
   - [ ] [zk-STARKs](https://eprint.iacr.org/2018/046)
 
-## 资讯了解
+## 开源仓库
+* [ZenGo X](https://github.com/ZenGo-X)：有很多实现加密算法的库。
+
+## 其他资源
 * [YouTube频道-Vic TALK](https://www.youtube.com/@victalk3834/videos)：视频博主，分享Web3资讯与观点。
 * [DeFiLlama](https://defllllama.com/?gclid=Cj0KCQjwocShBhCOARIsAFVYq0glToXBCO583QvUAdm3LVtUWO0VmVmm7biLrawGkhU2ncYzCEPHYdMaAkq4EALw_wcB)：Defi数据资讯平台。
+* [Zero Knowledge Canon](https://a16zcrypto.com/content/article/zero-knowledge-canon/)：很全面的zk相关资料总结，有很多论文课程资源。
