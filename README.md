@@ -1,5 +1,5 @@
 # 零知识证明
-一些零知识证明相关知识补充及总结见[zkpnote](/zkp-note/zkpnote.pdf)。
+一些零知识证明相关知识补充及总结见[zkpnote](/zkpnote.pdf)。
 ## 课程
 ### 区块链技术与应用
 这门课程主要介绍了比特币和以太坊，对了解区块链有很大的帮助。课程官网见[这里](http://zhenxiao.com/blockchain/)，bilibili课程视频见[这里](https://www.bilibili.com/video/BV1Vt411X7JF?p=1&vd_source=c6586ed2410fae637f393017e00f4845)。
