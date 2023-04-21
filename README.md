@@ -65,6 +65,7 @@
 * [ ] Formal Verification of ZKP
 * [ ] Hardware Acceleration of ZKP 
 ### 其他课程
+* [Dan Boneh Cyptography I](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)：很不错的密码学课程
 * [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
@@ -168,9 +169,19 @@
   - [ ] [zk-STARKs](https://eprint.iacr.org/2018/046)
 
 ## 开源仓库
-* [ZenGo X](https://github.com/ZenGo-X)：有很多实现加密算法的库。
+* [ZenGo X](https://github.com/ZenGo-X)：有很多rust实现的加密算法库。
+
+## 书籍
+#### 数学
+* [高等代数-北大第三版](https://book.douban.com/subject/1173952/)
+* [抽象代数-张贤科](https://book.douban.com/subject/36007684/)
+* [初等数论-潘承洞](https://book.douban.com/subject/1310584/)，PDF见[这里](/books/%E5%88%9D%E7%AD%89%E6%95%B0%E8%AE%BA-%E9%97%B5%E5%97%A3%E9%B9%A4-%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE.pdf)
+#### 密码学
+* [图解密码技术](https://book.douban.com/subject/26822106/)，PDF见[这里](/books/%E5%9B%BE%E8%A7%A3%E5%AF%86%E7%A0%81%E6%8A%80%E6%9C%AF%20%E7%AC%AC%E4%B8%89%E7%89%88.pdf)
 
 ## 其他资源
 * [YouTube频道-Vic TALK](https://www.youtube.com/@victalk3834/videos)：视频博主，分享Web3资讯与观点。
 * [DeFiLlama](https://defllllama.com/?gclid=Cj0KCQjwocShBhCOARIsAFVYq0glToXBCO583QvUAdm3LVtUWO0VmVmm7biLrawGkhU2ncYzCEPHYdMaAkq4EALw_wcB)：Defi数据资讯平台。
 * [Zero Knowledge Canon](https://a16zcrypto.com/content/article/zero-knowledge-canon/)：很全面的zk相关资料总结，有很多论文课程资源。
+* [微信公众号-星想法](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU5MzMxNTk2Nw==&action=getalbum&album_id=1458661849167511555&scene=173&from_msgid=2247485673&from_itemidx=1&count=3&nolastread=1#wechat_redirect)：有很多零知识证明文章与教程。
+* [Awesome zero knowledge proofs (zkp)](https://github.com/matter-labs/awesome-zero-knowledge-proofs): github仓库，丰富的zkp相关资源汇总。
