@@ -25,16 +25,18 @@
 ### ZK Shanghai 2023
 课程官网：[零知识证明工作坊 ZK Shanghai 2023](https://zkshanghai.xyz/)
 
-* [x] [第1 课 初识零知识](https://www.youtube.com/watch?v=gTzXM1Se-38&ab_channel=SutuLabs)
+* [x] [第 1 课 初识零知识](https://www.youtube.com/watch?v=gTzXM1Se-38&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%201/1-intro.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture1-homework.md)
-
+* [ ] 第 2 课 CIRCOM基础电路
+  * [讲义](/courses/ZK%20Shanghai%202023/lecture%202/2-circom1.pdf)
 ### Modern Zero Knowledge Cryptography
 课程官网：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 
 * [x] [Session 1 Introduction to ZK](https://www.youtube.com/watch?v=wj5fm_YvhEk&ab_channel=0xPARCFoundation)
   * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/slides/Modern%20ZK%20Crypto%20-%20Session%201.pdf)
-* [ ] Session 2 Circom 1
+* [x] [Session 2 Circom 1](https://www.youtube.com/watch?v=El64GK_rM6c)
+  * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%202/Modern%20ZK%20Crypto%20-%20Session%202.pdf)
 * [ ] Session 3 Mathematical building blocks
 * [ ] Session 4 Circom 2
 * [ ] Session 5 Commitment Schemes
