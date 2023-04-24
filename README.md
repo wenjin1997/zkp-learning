@@ -54,6 +54,7 @@
 * [x] [Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture2/Lecture2-2023.pdf)
 * [ ] Libraries and Compilers to build ZKP
+  * [slides](/courses/Zero%20Knowledge%20Proofs/lecture3/lecture3-2023.pdf) 
 * [ ] Interactive Proofs (IP)
 * [ ] Plonk Interactive Oracle Proofs (IOP)
 * [ ] Discrete-log-based Polynomial Commitments
