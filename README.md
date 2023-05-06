@@ -28,8 +28,12 @@
 * [x] [第 1 课 初识零知识](https://www.youtube.com/watch?v=gTzXM1Se-38&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%201/1-intro.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture1-homework.md)
-* [ ] 第 2 课 CIRCOM基础电路
+* [x] 第 2 课 CIRCOM基础电路
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%202/2-circom1.pdf)
+  * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)
+* [ ] 第 3 课 数学基础构件
+  * [讲义](/courses/ZK%20Shanghai%202023/lecture3/3-math.pdf)
+
 ### Modern Zero Knowledge Cryptography
 课程官网：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 
@@ -37,7 +41,8 @@
   * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/slides/Modern%20ZK%20Crypto%20-%20Session%201.pdf)
 * [x] [Session 2 Circom 1](https://www.youtube.com/watch?v=El64GK_rM6c)
   * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%202/Modern%20ZK%20Crypto%20-%20Session%202.pdf)
-* [ ] Session 3 Mathematical building blocks
+* [x] [Session 3 Mathematical building blocks](https://www.youtube.com/watch?v=Ja-xlDR-_7Y&ab_channel=0xPARCFoundation)
+  * [Lecture notes](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%203/ZKIAP_2023_-_mathematical_building_blocks.pdf)
 * [ ] Session 4 Circom 2
 * [ ] Session 5 Commitment Schemes
 * [ ] Session 6 Algorithms for Efficient Cryptographic Operations 
