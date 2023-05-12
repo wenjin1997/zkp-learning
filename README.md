@@ -21,20 +21,23 @@
 - [x] [5 Li17两方签名与密钥刷新](https://www.bilibili.com/video/BV1Xa4y1N7cX/?spm_id_from=333.788&vd_source=d6d5daa7e5c1f2e2ffc186195640b61d)
   * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%9A%E6%96%B9%E7%AD%BE%E5%90%8D%E7%B3%BB%E5%88%97%20%E7%AC%AC5%E8%AF%BE%20Li17%E4%B8%A4%E6%96%B9%E7%AD%BE%E5%90%8D%E5%8F%8A%E5%AF%86%E9%92%A5%E5%88%B7%E6%96%B0%E5%8D%8F%E8%AE%AE.pdf)
   * [笔记](/courses/cryptography-lynndell/note/note%20%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%9A%E6%96%B9%E7%AD%BE%E5%90%8D%E7%B3%BB%E5%88%97%20%E7%AC%AC5%E8%AF%BE%20Li17%E4%B8%A4%E6%96%B9%E7%AD%BE%E5%90%8D%E5%8F%8A%E5%AF%86%E9%92%A5%E5%88%B7%E6%96%B0%E5%8D%8F%E8%AE%AE.pdf)
-
+- [ ] [6 GG18门限签名](https://www.bilibili.com/video/BV1ds4y1c7Xa/?spm_id_from=333.788&vd_source=d6d5daa7e5c1f2e2ffc186195640b61d)
+  * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%9A%E7%AD%BE%E7%B3%BB%E5%88%97%20%E7%AC%AC6%E8%AF%BE%20GG18%E9%97%A8%E9%99%90%E7%AD%BE%E5%90%8D.pdf)
 ### ZK Shanghai 2023
 课程官网：[零知识证明工作坊 ZK Shanghai 2023](https://zkshanghai.xyz/)
 
 * [x] [第 1 课 初识零知识](https://www.youtube.com/watch?v=gTzXM1Se-38&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%201/1-intro.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture1-homework.md)
-* [x] 第 2 课 CIRCOM基础电路
+* [x] [第 2 课 CIRCOM基础电路](https://www.youtube.com/watch?v=CTJ1JkYLiyw&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%202/2-circom1.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)
 * [x] [第 3 课 数学基础构件](https://www.youtube.com/watch?v=Rfs4n4MrQso&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture3/3-math.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture3-homework.md)
-
+* [x] [第 4 课 CIRCOM实用电路](https://www.youtube.com/watch?v=smJz5RdY0Nc&ab_channel=SutuLabs)
+  * [讲义](/courses/ZK%20Shanghai%202023/lecture%204/4-circom2.pdf)
+  * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture4-homework.md)
 ### Modern Zero Knowledge Cryptography
 课程官网：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 
@@ -45,7 +48,9 @@
 * [x] [Session 3 Mathematical building blocks](https://www.youtube.com/watch?v=Ja-xlDR-_7Y&ab_channel=0xPARCFoundation)
   * [Lecture notes](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%203/ZKIAP_2023_-_mathematical_building_blocks.pdf)
   * [exercise](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%203/exercise.pdf)
-* [ ] Session 4 Circom 2
+* [x] [Session 4 Circom 2](https://www.youtube.com/watch?v=CjaMn9bMeFg&ab_channel=0xPARCFoundation)
+  * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/Session%204/Modern%20ZK%20Crypto%20Session%204.pdf)
+  * [Lecture notes](https://hackmd.io/@vb7401/zk-crypto-4)
 * [ ] Session 5 Commitment Schemes
 * [ ] Session 6 Algorithms for Efficient Cryptographic Operations 
 * [ ] Session 7 Arithmetizations
