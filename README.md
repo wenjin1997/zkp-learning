@@ -3,7 +3,7 @@
 ## 课程
 ### 区块链技术与应用
 这门课程主要介绍了比特币和以太坊，对了解区块链有很大的帮助。课程官网见[这里](http://zhenxiao.com/blockchain/)，bilibili课程视频见[这里](https://www.bilibili.com/video/BV1Vt411X7JF?p=1&vd_source=c6586ed2410fae637f393017e00f4845)。
-* [笔记](/courses/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8/note.pdf)
+* 笔记见[zkpnote](/zkpnote.pdf)区块链技术与应用部分。
 ### 密码学系列课程
 课程链接：[密码学系列课程](https://www.bilibili.com/video/BV18T411k74f/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
 #### 密码学基础系列
@@ -38,6 +38,9 @@
 * [x] [第 4 课 CIRCOM实用电路](https://www.youtube.com/watch?v=smJz5RdY0Nc&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%204/4-circom2.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture4-homework.md)
+* [x] [第 5 课 承诺方案](https://www.youtube.com/watch?v=smJz5RdY0Nc)
+  * [讲义](/courses//ZK%20Shanghai%202023//lecture%205/5-commitment.pdf)
+  * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture5/HW5.pdf)
 ### Modern Zero Knowledge Cryptography
 课程官网：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 
@@ -51,7 +54,9 @@
 * [x] [Session 4 Circom 2](https://www.youtube.com/watch?v=CjaMn9bMeFg&ab_channel=0xPARCFoundation)
   * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/Session%204/Modern%20ZK%20Crypto%20Session%204.pdf)
   * [Lecture notes](https://hackmd.io/@vb7401/zk-crypto-4)
-* [ ] Session 5 Commitment Schemes
+* [x] [Session 5 Commitment Schemes](https://www.youtube.com/watch?v=2aL3mP6AI3c)
+  * [Lecture Notes](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%205/Lecture%20notes.pdf)
+  * [Exercises](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%205/Exercises.pdf)
 * [ ] Session 6 Algorithms for Efficient Cryptographic Operations 
 * [ ] Session 7 Arithmetizations
 * [ ] Session 8 PLONK and polynomial identities
