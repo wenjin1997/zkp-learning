@@ -41,6 +41,12 @@
 * [x] [第 5 课 承诺方案](https://www.youtube.com/watch?v=smJz5RdY0Nc)
   * [讲义](/courses//ZK%20Shanghai%202023//lecture%205/5-commitment.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture5/HW5.pdf)
+* [ ] [第 6 课 算术化](https://www.youtube.com/watch?v=nYMRQyQ8pHs&ab_channel=SutuLabs)
+* [ ] [第 7 课 高效密码运算算法 1]()
+* [ ] [第 8 课 高效密码运算算法 2]()
+* [ ] [第 9 课 PLONK及证明系统技术栈]()
+* [ ] [第 10 课 递归和组合；应用ZK结构 1]()
+* [ ] [第 11 课 应用ZK结构 2]()
 ### Modern Zero Knowledge Cryptography
 课程官网：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 
