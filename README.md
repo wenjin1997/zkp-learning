@@ -41,7 +41,9 @@
 * [x] [第 5 课 承诺方案](https://www.youtube.com/watch?v=smJz5RdY0Nc)
   * [讲义](/courses//ZK%20Shanghai%202023//lecture%205/5-commitment.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture5/HW5.pdf)
-* [ ] [第 6 课 算术化](https://www.youtube.com/watch?v=nYMRQyQ8pHs&ab_channel=SutuLabs)
+* [x] [第 6 课 算术化](https://www.youtube.com/watch?v=nYMRQyQ8pHs&ab_channel=SutuLabs)
+  * [讲义](/courses/ZK%20Shanghai%202023/lecture%206/6-arithmetization.pdf)
+  * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture6-homework.md)
 * [ ] [第 7 课 高效密码运算算法 1]()
 * [ ] [第 8 课 高效密码运算算法 2]()
 * [ ] [第 9 课 PLONK及证明系统技术栈]()
@@ -64,7 +66,8 @@
   * [Lecture Notes](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%205/Lecture%20notes.pdf)
   * [Exercises](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%205/Exercises.pdf)
 * [ ] Session 6 Algorithms for Efficient Cryptographic Operations 
-* [ ] Session 7 Arithmetizations
+* [x] [Session 7 Arithmetizations](https://www.youtube.com/watch?v=PRyNIUjksoY)
+  * [Lecture Notes](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%207/notes.pdf)
 * [ ] Session 8 PLONK and polynomial identities
 * [ ] Session 9 Proving systems stack; recursion and composition.
 * [ ] Session 10 Applied ZK Constructions 1
