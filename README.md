@@ -44,8 +44,12 @@
 * [x] [第 6 课 算术化](https://www.youtube.com/watch?v=nYMRQyQ8pHs&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%206/6-arithmetization.pdf)
   * [作业](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture6-homework.md)
-* [ ] [第 7 课 高效密码运算算法 1]()
+* [x] [第 7 课 高效密码运算算法 1](https://www.youtube.com/watch?v=4Z6Ety1ZTtg)
+  * [讲义](/courses/ZK%20Shanghai%202023/lecture%207/7-cryptographic-operations.pdf)
+  * [笔记](/courses/ZK%20Shanghai%202023/lecture%207/mynotes.pdf)
 * [ ] [第 8 课 高效密码运算算法 2]()
+  * [讲义](/courses/ZK%20Shanghai%202023/lecture%207/7-cryptographic-operations.pdf)
+  * [笔记](/courses/ZK%20Shanghai%202023/lecture%207/mynotes.pdf)
 * [ ] [第 9 课 PLONK及证明系统技术栈]()
 * [ ] [第 10 课 递归和组合；应用ZK结构 1]()
 * [ ] [第 11 课 应用ZK结构 2]()
@@ -65,7 +69,8 @@
 * [x] [Session 5 Commitment Schemes](https://www.youtube.com/watch?v=2aL3mP6AI3c)
   * [Lecture Notes](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%205/Lecture%20notes.pdf)
   * [Exercises](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%205/Exercises.pdf)
-* [ ] Session 6 Algorithms for Efficient Cryptographic Operations 
+* [ ] [Session 6 Algorithms for Efficient Cryptographic Operations](https://www.youtube.com/watch?v=bTiNNw8lHpc) 
+  * [Lecture Notes](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%206/notes.pdf)
 * [x] [Session 7 Arithmetizations](https://www.youtube.com/watch?v=PRyNIUjksoY)
   * [Lecture Notes](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%207/notes.pdf)
 * [ ] Session 8 PLONK and polynomial identities
