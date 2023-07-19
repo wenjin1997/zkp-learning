@@ -47,7 +47,7 @@
 * [x] [第 7 课 高效密码运算算法 1](https://www.youtube.com/watch?v=4Z6Ety1ZTtg)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%207/7-cryptographic-operations.pdf)
   * [笔记](/courses/ZK%20Shanghai%202023/lecture%207/mynotes.pdf)
-* [ ] [第 8 课 高效密码运算算法 2]()
+* [x] [第 8 课 高效密码运算算法 2](https://www.youtube.com/watch?v=9l2pu7gKhOQ&ab_channel=SutuLabs)
   * [讲义](/courses/ZK%20Shanghai%202023/lecture%207/7-cryptographic-operations.pdf)
   * [笔记](/courses/ZK%20Shanghai%202023/lecture%207/mynotes.pdf)
 * [ ] [第 9 课 PLONK及证明系统技术栈]()
