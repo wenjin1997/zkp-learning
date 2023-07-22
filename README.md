@@ -57,7 +57,7 @@
 课程官网：[[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 
 * [x] [Session 1 Introduction to ZK](https://www.youtube.com/watch?v=wj5fm_YvhEk&ab_channel=0xPARCFoundation)
-  * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/slides/Modern%20ZK%20Crypto%20-%20Session%201.pdf)
+  * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%201/Modern%20ZK%20Crypto%20-%20Session%201.pdf)
 * [x] [Session 2 Circom 1](https://www.youtube.com/watch?v=El64GK_rM6c)
   * [slides](/courses/Modern%20Zero%20Knowledge%20Cryptography/session%202/Modern%20ZK%20Crypto%20-%20Session%202.pdf)
 * [x] [Session 3 Mathematical building blocks](https://www.youtube.com/watch?v=Ja-xlDR-_7Y&ab_channel=0xPARCFoundation)
@@ -84,6 +84,7 @@
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture1/Lecture1-2023-slides.pdf)
 * [x] [Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture2/Lecture2-2023.pdf)
+  * ✨ [Zero Knowledge Canon](https://a16zcrypto.com/posts/article/zero-knowledge-canon/)：关于ZK相关的资料汇总，比较全面。
 * [ ] Libraries and Compilers to build ZKP
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture3/lecture3-2023.pdf) 
 * [ ] Interactive Proofs (IP)
@@ -98,6 +99,11 @@
 * [ ] Privacy-preserving Blockchains
 * [ ] Formal Verification of ZKP
 * [ ] Hardware Acceleration of ZKP 
+
+### ABCDE ZK Hacker Camp Curriculum
+课程官网链接见[这里](https://abcdelabs.github.io/zkcamp)。
+* [x] 1 Efficient Zero-Knowledge Proofs: Theory and Practice
+  * [slides](/courses/ABCDE%20ZK%20Hacker/Lecture%201/1_Jiheng%20Zhang_nus%20polyhedra.pptx)
 ### 其他课程
 * [Dan Boneh Cyptography I](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)：很不错的密码学课程
 * [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
