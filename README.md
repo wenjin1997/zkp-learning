@@ -85,7 +85,7 @@
 * [x] [Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture2/Lecture2-2023.pdf)
   * ✨ [Zero Knowledge Canon](https://a16zcrypto.com/posts/article/zero-knowledge-canon/)：关于ZK相关的资料汇总，比较全面。
-* [ ] Libraries and Compilers to build ZKP
+* [x] [Libraries and Compilers to build ZKP](https://www.youtube.com/watch?v=UpRSaG6iuks&t=3638s&ab_channel=Blockchain-Web3MOOCs)
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture3/lecture3-2023.pdf) 
 * [ ] Interactive Proofs (IP)
 * [ ] Plonk Interactive Oracle Proofs (IOP)
@@ -102,8 +102,10 @@
 
 ### ABCDE ZK Hacker Camp Curriculum
 课程官网链接见[这里](https://abcdelabs.github.io/zkcamp)。
-* [x] 1 Efficient Zero-Knowledge Proofs: Theory and Practice
+* [x] [1 Efficient Zero-Knowledge Proofs: Theory and Practice](https://www.youtube.com/watch?v=-tJjb7TZ3C8)
   * [slides](/courses/ABCDE%20ZK%20Hacker/Lecture%201/1_Jiheng%20Zhang_nus%20polyhedra.pptx)
+* [x] 2 Adding ZK-based reflection to the EVM with Axiom: How it works and what's next
+  * [slides](/courses/ABCDE%20ZK%20Hacker/Lecture%202/Axiom%20Tech%20Talk%20(for%20ABCDE).pdf)
 ### 其他课程
 * [Dan Boneh Cyptography I](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)：很不错的密码学课程
 * [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
