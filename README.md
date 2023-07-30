@@ -87,7 +87,8 @@
   * ✨ [Zero Knowledge Canon](https://a16zcrypto.com/posts/article/zero-knowledge-canon/)：关于ZK相关的资料汇总，比较全面。
 * [x] [Libraries and Compilers to build ZKP](https://www.youtube.com/watch?v=UpRSaG6iuks&t=3638s&ab_channel=Blockchain-Web3MOOCs)
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture3/lecture3-2023.pdf) 
-* [ ] Interactive Proofs (IP)
+* [x] [Interactive Proofs (IP)](https://www.youtube.com/watch?v=4018OYyoAf8)
+  * [slides](/courses/Zero%20Knowledge%20Proofs/lecture4/lecture4.pdf)
 * [ ] Plonk Interactive Oracle Proofs (IOP)
 * [ ] Discrete-log-based Polynomial Commitments
 * [ ] ZKP based on Error-Correcting Codes
