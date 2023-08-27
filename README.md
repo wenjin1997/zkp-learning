@@ -91,9 +91,10 @@
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture4/lecture4.pdf)
 * [x] [Plonk Interactive Oracle Proofs (IOP)](https://www.youtube.com/watch?v=A0oZVEXav24&ab_channel=Blockchain-Web3MOOCs)
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture5/lecture5-2023.pdf) 
-* [x] [Discrete-log-based Polynomial Commitments]()
+* [x] [Discrete-log-based Polynomial Commitments](https://www.youtube.com/watch?v=WyT5KkKBJUw&ab_channel=Blockchain-Web3MOOCs)
   * [slides](/courses/Zero%20Knowledge%20Proofs/lecture6/lecture6.pdf) 
-* [ ] ZKP based on Error-Correcting Codes
+* [x] [ZKP based on Error-Correcting Codes](https://www.youtube.com/watch?v=1S7ZjqG9uyI&ab_channel=Blockchain-Web3MOOCs)
+  * [slides](/courses/Zero%20Knowledge%20Proofs/lecture7/lecture7.pdf) 
 * [ ] Transparent ZKP
 * [ ] Linear Probabilistically Checkable Proofs (PCP) 
 * [ ] Recursive SNARKs, Aggregation and Accumulation
