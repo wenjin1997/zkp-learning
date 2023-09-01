@@ -23,6 +23,13 @@
   * [笔记](/courses/cryptography-lynndell/note/note%20%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%9A%E6%96%B9%E7%AD%BE%E5%90%8D%E7%B3%BB%E5%88%97%20%E7%AC%AC5%E8%AF%BE%20Li17%E4%B8%A4%E6%96%B9%E7%AD%BE%E5%90%8D%E5%8F%8A%E5%AF%86%E9%92%A5%E5%88%B7%E6%96%B0%E5%8D%8F%E8%AE%AE.pdf)
 - [ ] [6 GG18门限签名](https://www.bilibili.com/video/BV1ds4y1c7Xa/?spm_id_from=333.788&vd_source=d6d5daa7e5c1f2e2ffc186195640b61d)
   * [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%9A%E7%AD%BE%E7%B3%BB%E5%88%97%20%E7%AC%AC6%E8%AF%BE%20GG18%E9%97%A8%E9%99%90%E7%AD%BE%E5%90%8D.pdf)
+- [ ] [7 GG20门限签名](https://www.bilibili.com/video/BV11L41167iT/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
+
+#### zk系列
+- [x] [8 Groth16证明系统](https://www.bilibili.com/video/BV1Jh4y177QS/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
+  - [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%B3%BB%E5%88%97%20%E7%AC%AC8%E8%AF%BE%EF%BC%9AzkSnark--Groth16%E8%AF%81%E6%98%8E%E7%B3%BB%E7%BB%9F.pdf)
+- [x] [9 Plonk证明系统](https://www.bilibili.com/video/BV13h4y1k7Vc/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
+  - [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%B3%BB%E5%88%97%E8%AF%BE%E7%A8%8B9-zkSnark-Plonk%E8%AF%81%E6%98%8E%E7%B3%BB%E7%BB%9F.pdf)
 ### ZK Shanghai 2023
 课程官网：[零知识证明工作坊 ZK Shanghai 2023](https://zkshanghai.xyz/)
 
