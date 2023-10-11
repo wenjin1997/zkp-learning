@@ -117,6 +117,14 @@
   * [slides](/courses/ABCDE%20ZK%20Hacker/Lecture%201/1_Jiheng%20Zhang_nus%20polyhedra.pptx)
 * [x] 2 Adding ZK-based reflection to the EVM with Axiom: How it works and what's next
   * [slides](/courses/ABCDE%20ZK%20Hacker/Lecture%202/Axiom%20Tech%20Talk%20(for%20ABCDE).pdf)
+
+### Z2O-K7E
+课程官网链接见[这里](https://learn.z2o-k7e.world/)。
+#### [理解Plonk系列](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-intro.html)
+* [x] [1-Plonkish Arithmetization](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-arithmetization.html)
+  * [PDF](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/1-Plonkish%20Arithmetization%20-%20World%20of%20Z2O-K7E.pdf) 
+  * [note](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/1-Plonkish%20Arithmetization%20-%20note.pdf)
+
 ### 其他课程
 * [Dan Boneh Cyptography I](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)：很不错的密码学课程
 * [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
@@ -238,3 +246,4 @@
 * [Zero Knowledge Canon](https://a16zcrypto.com/content/article/zero-knowledge-canon/)：很全面的zk相关资料总结，有很多论文课程资源。
 * [微信公众号-星想法](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU5MzMxNTk2Nw==&action=getalbum&album_id=1458661849167511555&scene=173&from_msgid=2247485673&from_itemidx=1&count=3&nolastread=1#wechat_redirect)：有很多零知识证明文章与教程。
 * [Awesome zero knowledge proofs (zkp)](https://github.com/matter-labs/awesome-zero-knowledge-proofs): github仓库，丰富的zkp相关资源汇总。
+* [World of Z2O-K7E](https://learn.z2o-k7e.world/index.html)：很好的零知识证明教程。
