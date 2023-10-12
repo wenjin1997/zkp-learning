@@ -124,6 +124,9 @@
 * [x] [1-Plonkish Arithmetization](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-arithmetization.html)
   * [PDF](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/1-Plonkish%20Arithmetization%20-%20World%20of%20Z2O-K7E.pdf) 
   * [note](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/1-Plonkish%20Arithmetization%20-%20note.pdf)
+* [x] [2-多项式编码](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-lagrange-basis.html)
+  * [PDF](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/2-%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%BC%96%E7%A0%81%20-%20World%20of%20Z2O-K7E.pdf) 
+  * [note](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/2-%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%BC%96%E7%A0%81%20-%20note.pdf)
 
 ### 其他课程
 * [Dan Boneh Cyptography I](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)：很不错的密码学课程
