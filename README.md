@@ -131,6 +131,7 @@
 ### 其他课程
 * [Dan Boneh Cyptography I](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)：很不错的密码学课程
 * [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
+* [WTF-zk](https://github.com/WTFAcademy/WTF-zk)：不错的零知识证明入门教程，包含一些数学基础知识，并有python代码作为示例。
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
 - [x] 故事中的零知识证明
@@ -236,12 +237,16 @@
 * [ZenGo X](https://github.com/ZenGo-X)：有很多rust实现的加密算法库。
 
 ## 书籍
-#### 数学
+### 数学
 * [高等代数-北大第三版](https://book.douban.com/subject/1173952/)
 * [抽象代数-张贤科](https://book.douban.com/subject/36007684/)
 * [初等数论-潘承洞](https://book.douban.com/subject/1310584/)，PDF见[这里](/books/%E5%88%9D%E7%AD%89%E6%95%B0%E8%AE%BA-%E9%97%B5%E5%97%A3%E9%B9%A4-%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE.pdf)
-#### 密码学
+### 密码学
 * [图解密码技术](https://book.douban.com/subject/26822106/)，PDF见[这里](/books/%E5%9B%BE%E8%A7%A3%E5%AF%86%E7%A0%81%E6%8A%80%E6%9C%AF%20%E7%AC%AC%E4%B8%89%E7%89%88.pdf)
+### ZK
+#### The MoonMath Manual TO ZK-SNARKS
+* github仓库地址见[这里](https://github.com/LeastAuthority/moonmath-manual?tab=readme-ov-file)
+* PDF: [The MoonMath Manual V1.1.2](/books/The%20MoonMath%20Manual-v1.1.2.pdf)
 
 ## 其他资源
 * [YouTube频道-Vic TALK](https://www.youtube.com/@victalk3834/videos)：视频博主，分享Web3资讯与观点。
