@@ -233,6 +233,12 @@
   - [ ] [Hyrax](https://eprint.iacr.org/2017/1132.pdf)
   - [ ] [zk-STARKs](https://eprint.iacr.org/2018/046)
 
+## 项目
+### ZKEVM
+- [x] [视频-zkEVM总览](https://www.youtube.com/watch?v=SEp5SFaYQHY&t=70s&ab_channel=DappLearning)：Scroll的 Ye Zhang 大佬的讲解视频，对于初步了解zkEVM是什么有很大帮助。
+  * [slides](/courses/zkEVM-scroll/zkEVM.pdf)
+
+
 ## 开源仓库
 * [ZenGo X](https://github.com/ZenGo-X)：有很多rust实现的加密算法库。
 
