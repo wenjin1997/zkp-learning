@@ -27,3 +27,11 @@
 ![](./img/halo2-2-11.png)
 
 ![](./img/halo2-2-12.png)
+
+![](./img/halo2-2-13.png)
+
+![](./img/halo2-2-14.png)
+
+![](./img/halo2-2-15.png)
+
+![](./img/halo2-2-16.png)

@@ -246,15 +246,12 @@
   - [ ] [Hyrax](https://eprint.iacr.org/2017/1132.pdf)
   - [ ] [zk-STARKs](https://eprint.iacr.org/2018/046)
 
-<<<<<<< HEAD
 ## 项目
 ### ZKEVM
 - [x] 📺 [视频-zkEVM总览](https://www.youtube.com/watch?v=SEp5SFaYQHY&t=70s&ab_channel=DappLearning)：Scroll的 Ye Zhang 大佬的讲解视频，对于初步了解zkEVM是什么有很大帮助。
   * [slides](/courses/zkEVM-scroll/zkEVM.pdf)
 - [ ] 📺 [Dream@Scroll：halo2 (zkEVM gadgets) 分享](https://706community.notion.site/Dream-Scroll-halo2-zkEVM-gadgets-46e7495003b147ca8f25d2533a07799b)
 
-=======
->>>>>>> parent of e24e8f2 (📃 docs: add zkevm video)
 ## 开源仓库
 * [ZenGo X](https://github.com/ZenGo-X)：有很多rust实现的加密算法库。
 
