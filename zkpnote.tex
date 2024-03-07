@@ -75,6 +75,45 @@
 
 \textbf{映射三要素}：定义域、值域、对应规则。对任意两个不同的原像，它们有不同的像，则为\textbf{单射}。
 
+
+\subsubsection{群}
+\begin{definition}[《抽象代数》张贤科P17]
+	一个\textbf{群}就是一个非空集合$G$，且其元素之间有一种运算，此运算将$G$中任意元素$a$，$b$（可以相等）对应于$G$中的一个元素（记为$a \cdot b$或$ab$），而且满足如下4个条件（称为\textbf{群的公理}）：
+	\begin{enumerate}
+		\item[（G1）]（封闭性）$ab$仍然在$G$中（对任意$a$，$b \in G$）；
+		\item[（G2）]（结合律）$a(bc)=(ab)c$（对任意$a,b,c \in G$）；
+		\item[（G3）]（存在单位元）存在元素$e \in G$使$ea = ae = a$（对任意$a \in G$）；
+		\item[（G4）]（可逆性）对每个元素$a \in G$，存在$a' \in G$使$a'a = a a' = e$.
+	\end{enumerate}
+\end{definition}
+满足交换律的群称为\textbf{交换群}，或\textbf{Abel群}。
+
+由一个元素$a$生成的子群，称为\textbf{循环子群}，记为$\langle a \rangle $.如果群$G=\langle a \rangle$，则$G$称为\textbf{循环群}.
+
+\begin{theorem}[The fundamental theorem of finite cyclic groups]
+    If $G$ is a finite cyclic group of order $n$, then every subgroup $G \prime$ of $G$ is finite and cyclic, and the order of $G \prime$ is a factor of n. Moreover for each factor $k$ of $n$, $G$ has exactly one subgroup of order $k$.
+\end{theorem}
+
+\begin{theorem}[算术基本定理，参考维基百科]
+	算术基本定理，又称为正整数的唯一分解定理，即：每个大于1的自然数，要么本身就是质数，要么可以写为2个或以上的质数的积，而且这些质因子按大小排列之后，写法仅有一种方式。
+\end{theorem}
+
+\textbf{充分条件与必要条件}
+\begin{itemize}
+	\item 由条件能推出结论，但由结论推不出这个条件，这个条件就是充分条件。
+	\item 如果能由结论推出条件，但由条件推不出结论,此条件为必要条件。
+	\item 如果既能由结论推出条件，又能有条件推出结论,此条件为充要条件。
+\end{itemize}
+
+\subsubsection{双线性映射}
+$G_1,G_2$与$G_T$是三个素数循环群，$g_1,g_2$分别是群$G_1, G_2$的生成元，$e$为双线性映射 $G_1 \times G_2 \rightarrow G_T$，则双线性映射有以下两个性质：
+\begin{itemize}
+    \item 双线性：对任意的$a,b \in Z^*$,$u \in G_1, v \in G_2$,有$e(u^a,v^b)=e(u,v)^{ab}$.
+    \item 非退化：$e(g_1,g_2) \neq 1$.
+\end{itemize}
+
+\subsection{初等数论}
+\subsubsection{最大公因数和辗转相除法}
 以$(a,b)$或gcd$(a,b)$记$a,b$的正的最大公因子。
 \begin{lemma}\label{lemma:abqr}
 	若$a=bq+r$，其中$a,b,r$为整数（不全为0）,则
@@ -91,7 +130,7 @@
 	成立，那么$f(x),g(x)$和$g(x),r(x)$有相同的公因式。
 \end{lemma}
 
-引理\ref{lemma:abqr}中的公式$(a,b)=(r,b)$说明：余数$r$可作为原数$a$的“替身”去参与求最大公因子，以此类推，引出著名的\textbf{“辗转相除法”}。
+引理\ref{lemma:abqr}中的公式$(a,b)=(r,b)$说明：余数$r$可作为原数$a$的“替身”去参与求最大公因子，以此类推，引出著名的\textbf{“辗转相除法”}，也称为\textbf{"欧几里得除法(Euclidean Division)"}。
 
 \begin{theorem}
 	任意两个整数$a,b(b \neq 0)$的最大公因子$d = (a,b)$是唯一存在的，即$d = r_s$（就是$a$与$b$辗转相除的最后非零余数），而且存在整数$u,v$使
@@ -100,32 +139,7 @@
 	$$
 \end{theorem}
 
-\begin{definition}[《抽象代数》张贤科P17]
-	一个\textbf{群}就是一个非空集合$G$，且其元素之间有一种运算，此运算将$G$中任意元素$a$，$b$（可以相等）对应于$G$中的一个元素（记为$a \cdot b$或$ab$），而且满足如下4个条件（称为\textbf{群的公理}）：
-	\begin{enumerate}
-		\item[（G1）]（封闭性）$ab$仍然在$G$中（对任意$a$，$b \in G$）；
-		\item[（G2）]（结合律）$a(bc)=(ab)c$（对任意$a,b,c \in G$）；
-		\item[（G3）]（存在单位元）存在元素$e \in G$使$ea = ae = a$（对任意$a \in G$）；
-		\item[（G4）]（可逆性）对每个元素$a \in G$，存在$a' \in G$使$a'a = a a' = e$.
-	\end{enumerate}
-\end{definition}
-满足交换律的群称为\textbf{交换群}，或\textbf{Abel群}。
-
-由一个元素$a$生成的子群，称为\textbf{循环子群}，记为$\langle a \rangle $.如果群$G=\langle a \rangle$，则$G$称为\textbf{循环群}.
-
-
-\begin{theorem}[算术基本定理，参考维基百科]
-	算术基本定理，又称为正整数的唯一分解定理，即：每个大于1的自然数，要么本身就是质数，要么可以写为2个或以上的质数的积，而且这些质因子按大小排列之后，写法仅有一种方式。
-\end{theorem}
-
-\textbf{充分条件与必要条件}
-\begin{itemize}
-	\item 由条件能推出结论，但由结论推不出这个条件，这个条件就是充分条件。
-	\item 如果能由结论推出条件，但由条件推不出结论,此条件为必要条件。
-	\item 如果既能由结论推出条件，又能有条件推出结论,此条件为充要条件。
-\end{itemize}
-
-\subsection{初等数论}
+\subsubsection{素数、整数的惟一分解定理}
 \subsubsection{原根}
 参考\href{https://oi-wiki.org/math/number-theory/primitive-root/#%E5%8E%9F%E6%A0%B9}{oi-wiki原根}，一些数学概念及定理如下：
 \begin{definition}
@@ -166,7 +180,7 @@
 \end{theorem}
 
 \subsection{计算复杂度}
-参考\href{https://zh.wikipedia.org/wiki/P/NP%E9%97%AE%E9%A2%98}{P/NP问题}、\href{https://zh.wikipedia.org/wiki/NP%E5%AE%8C%E5%85%A8}{NP完全}、\href{https://zhuanlan.zhihu.com/p/73953567}{P问题、NP问题、NP完全问题和NP难问题}：
+参考\href{https://zh.wikipedia.org/wiki/P/NP%E9%97%AE%E9%A2%98}{P/NP问题}、\href{https://zh.wikipedia.org/wiki/NP%E5%AE%8C%E5%85%A8}{NP完全}、\href{https://zhuanlan.zhihu.com/p/73953567}{P问题、NP问题、NP完全问题和NP难问题}、\href{https://www.geeksforgeeks.org/types-of-complexity-classes-p-np-conp-np-hard-and-np-complete/}{P, NP, CoNP, NP hard and NP complete | Complexity Classes}：
 \begin{itemize}
 	\item \textbf{P问题}：复杂度类P即为所有可以由一个确定型图灵机在多项式表达的时间内解决的问题。
 	\item \textbf{NP问题}：类NP由所有可以在多项式时间内验证它的解是否正确的决定问题组成，或者等效的说，那些可以在非确定型图灵机上在多项式时间内找出解的问题的集合。
@@ -178,7 +192,7 @@
 	\end{itemize}
 	可归约（reducible）在此意指对每个问题$L$，总有一个多项式时间多对一变换，即一个决定性的算法可以将实例 $l \in L$ 转化成实例 $c \in C$ ，并让$c$回答Yes当且仅当此答案对$l$也是Yes。为了证明某个NP问题A实际上是NP完全问题，证明者必须找出一个已知的NP完全问题可以归约成A。
 
-	\item \textbf{NP难问题}：NP-Hard问题是这样一种问题，它满足NPC问题定义的第二条但不一定要满足第一条（就是说，NP-Hard问题要比 NPC问题的范围广，NP-Hard问题没有限定属于NP），即所有的NP问题都能约化到它，但是它不一定是一个NP问题。
+	\item \textbf{NP难问题}：NP-Hard问题是这样一种问题，它满足NPC问题定义的第二条但不一定要满足第一条（就是说，NP-Hard问题要比 NPC问题的范围广，NP-Hard问题没有限定属于NP），即所有的NP问题都能约化到它，但是它不一定是一个NP问题。如果所有NP问题都可以多项式时间归约到某个问题，则称该问题为NP困难。
 \end{itemize}
 它们之间的关系如下：
 \begin{figure}[H]

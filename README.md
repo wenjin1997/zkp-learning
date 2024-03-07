@@ -121,17 +121,30 @@
 ### Z2O-K7E
 课程官网链接见[这里](https://learn.z2o-k7e.world/)。
 #### [理解Plonk系列](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-intro.html)
-* [x] [1-Plonkish Arithmetization](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-arithmetization.html)
+* [x] 📃 [1-Plonkish Arithmetization](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-arithmetization.html)
   * [PDF](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/1-Plonkish%20Arithmetization%20-%20World%20of%20Z2O-K7E.pdf) 
   * [note](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/1-Plonkish%20Arithmetization%20-%20note.pdf)
-* [x] [2-多项式编码](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-lagrange-basis.html)
+* [x] 📃 [2-多项式编码](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-lagrange-basis.html)
   * [PDF](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/2-%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%BC%96%E7%A0%81%20-%20World%20of%20Z2O-K7E.pdf) 
   * [note](/courses/Z2O-K7E/%E7%90%86%E8%A7%A3Plonk%E7%B3%BB%E5%88%97/2-%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%BC%96%E7%A0%81%20-%20note.pdf)
+* [x] 📃 [3-置换证明](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-permutation.html)
+* [x] 📃 [4-算术约束与拷贝约束](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-constraints.html)
+* [x] 📃 [5-多项式承诺](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-polycom.html)
+* [x] 📃 [6-实现 Zero Knowledge](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-randomizing.html)
+* [x] 📃 [7-Lookup Gate](https://learn.z2o-k7e.world/plonk-intro-cn/plonk-lookup.html)
 
 ### 其他课程
 * [Dan Boneh Cyptography I](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)：很不错的密码学课程
 * [PrivacyIN 隐私学院 首期ZK训练营](https://www.youtube.com/watch?v=0C0ngiopw80&ab_channel=LatticeXFoundation)
 * [WTF-zk](https://github.com/WTFAcademy/WTF-zk)：不错的零知识证明入门教程，包含一些数学基础知识，并有python代码作为示例。
+
+## Halo2
+### StarLi Halo2课程
+* [x] 📺 [01-Halo2入门基础介绍](https://www.bilibili.com/video/BV1ML4y1M7iV/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
+  * 📝 [笔记](/courses/Halo2-StarLi/01-Halo2入门基础介绍.md)
+* [x] 📺 [02-Halo2 深入理解 Permutation & Lookup算法](https://www.bilibili.com/video/BV1C34y1t7pN/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
+  * 📝 [笔记](/courses/Halo2-StarLi/02-Halo2%20深入理解Permutation%20&%20Lookup算法.md)
+
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
 - [x] 故事中的零知识证明
@@ -233,12 +246,15 @@
   - [ ] [Hyrax](https://eprint.iacr.org/2017/1132.pdf)
   - [ ] [zk-STARKs](https://eprint.iacr.org/2018/046)
 
+<<<<<<< HEAD
 ## 项目
 ### ZKEVM
-- [x] [视频-zkEVM总览](https://www.youtube.com/watch?v=SEp5SFaYQHY&t=70s&ab_channel=DappLearning)：Scroll的 Ye Zhang 大佬的讲解视频，对于初步了解zkEVM是什么有很大帮助。
+- [x] 📺 [视频-zkEVM总览](https://www.youtube.com/watch?v=SEp5SFaYQHY&t=70s&ab_channel=DappLearning)：Scroll的 Ye Zhang 大佬的讲解视频，对于初步了解zkEVM是什么有很大帮助。
   * [slides](/courses/zkEVM-scroll/zkEVM.pdf)
+- [ ] 📺 [Dream@Scroll：halo2 (zkEVM gadgets) 分享](https://706community.notion.site/Dream-Scroll-halo2-zkEVM-gadgets-46e7495003b147ca8f25d2533a07799b)
 
-
+=======
+>>>>>>> parent of e24e8f2 (📃 docs: add zkevm video)
 ## 开源仓库
 * [ZenGo X](https://github.com/ZenGo-X)：有很多rust实现的加密算法库。
 
@@ -261,3 +277,4 @@
 * [微信公众号-星想法](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU5MzMxNTk2Nw==&action=getalbum&album_id=1458661849167511555&scene=173&from_msgid=2247485673&from_itemidx=1&count=3&nolastread=1#wechat_redirect)：有很多零知识证明文章与教程。
 * [Awesome zero knowledge proofs (zkp)](https://github.com/matter-labs/awesome-zero-knowledge-proofs): github仓库，丰富的zkp相关资源汇总。
 * [World of Z2O-K7E](https://learn.z2o-k7e.world/index.html)：很好的零知识证明教程。
+* [Vitalik Buterin's website](https://vitalik.eth.limo/index.html)：V神的博客文章。
