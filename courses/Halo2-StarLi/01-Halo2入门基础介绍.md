@@ -10,7 +10,11 @@ B站视频链接见[这里](https://www.bilibili.com/video/BV1ML4y1M7iV/?spm_id_
     * 支持递归
 ![](./img/halo2-1-3.png)
 ![](./img/halo2-1-4.png)
+
 ![](./img/halo2-1-5.png)
+
+* 内积证明科普链接见[这里](https://dankradfeist.de/ethereum/2021/11/18/inner-product-arguments-mandarin.html) 。
+
 ![](./img/halo2-1-6.png)
 * 在Grouth16中一个很长的线性组合，在Plonk中可能会拆分成几十个gate约束。
 * 在zkSync代码中会有标准Plonk的变种。
