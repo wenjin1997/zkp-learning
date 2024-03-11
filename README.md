@@ -144,6 +144,9 @@
   * 📝 [笔记](/courses/Halo2-StarLi/01-Halo2入门基础介绍.md)
 * [x] 📺 [02-Halo2 深入理解 Permutation & Lookup算法](https://www.bilibili.com/video/BV1C34y1t7pN/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
   * 📝 [笔记](/courses/Halo2-StarLi/02-Halo2%20深入理解Permutation%20&%20Lookup算法.md)
+* [ ] 📺 [03 - Halo2协议基础及介绍](https://www.bilibili.com/video/BV19L4y1T7ai/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
+* [ ] 📺 [04 - Halo2电路进阶（sha256）](https://www.bilibili.com/video/BV1LL411P7ba/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
+* [ ] 📺 [05 - Halo2源代码导读](https://www.bilibili.com/video/BV1HS4y1D7tX/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
 
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
@@ -245,6 +248,10 @@
   - [ ] [Libra](https://eprint.iacr.org/2019/317)
   - [ ] [Hyrax](https://eprint.iacr.org/2017/1132.pdf)
   - [ ] [zk-STARKs](https://eprint.iacr.org/2018/046)
+- [ ] 内积证明
+  - [x] [Dankrad Feist 内积证明](https://dankradfeist.de/ethereum/2021/11/18/inner-product-arguments-mandarin.html)
+    - 📒 [笔记](/aritcles/inner%20product/DankradFeist_InnerProduct_Note.pdf)
+
 
 ## 项目
 ### ZKEVM

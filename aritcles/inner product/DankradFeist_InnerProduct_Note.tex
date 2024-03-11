@@ -1,0 +1,127 @@
+% \documentclass[11pt,twoside,a4paper]{article}
+% \usepackage{times}
+
+% \usepackage{xeCJK}
+
+% \setmainfont{Times New Roman}
+
+% \setCJKmainfont{Songti SC}
+\documentclass[10pt]{ctexart}
+% \usepackage[UTF-8]{ctex}
+\usepackage{amsmath}
+\usepackage{amsthm} % 根据 amsthm 的手册, amsthm 的加载要在 amsmath 之后
+\usepackage{amssymb}  %为了能使用\mathbb{H} 
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[colorlinks,linkcolor=blue]{hyperref} % 使用超链接
+\usepackage{pdfpages}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.7}
+\usepackage{graphicx} %插入图片的宏包
+\usepackage{float} %设置图片浮动位置的宏包
+\usepackage{subfigure} %插入多图时用子图显示的宏包
+\usepackage{graphicx}
+
+\usepackage{listings}
+
+\lstset{
+ columns=fixed,       
+ numbers=left,                                        % 在左侧显示行号
+ numberstyle=\tiny\color{gray},                       % 设定行号格式
+ frame=none,                                          % 不显示背景边框
+ backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
+ keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
+ numberstyle=\footnotesize\color{darkgray},           
+ commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+ stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+ showstringspaces=false,                              % 不显示字符串中的空格
+%language=c++,                                        % 设置语言
+}
+
+\newtheorem{definition}{定义}
+\newtheorem{lemma}{引理}
+\newtheorem{theorem}{定理}
+\newtheorem{example}{例}
+
+\usepackage{comment,enumerate,multicol,xspace}
+
+  \newcounter{mnote}
+  \setcounter{mnote}{0}
+  \newcommand{\mnote}[1]{\addtocounter{mnote}{1}
+    \ensuremath{{}^{\bullet\arabic{mnote}}}
+    \marginpar{\footnotesize\em\color{red}\ensuremath{\bullet\arabic{mnote}}#1}}
+  \let\oldmarginpar\marginpar
+    \renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]%
+    {\raggedright\footnotesize #1}}
+
+\title{内积证明}
+\author{Jade}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{内积证明}
+参考\href{https://dankradfeist.de/ethereum/2021/11/18/inner-product-arguments-mandarin.html}{这篇文章}。
+
+想对这样的结构 $C = \vec{a} \cdot g + \vec{b} \cdot h + (\vec{a} \cdot \vec{b})  q$ 作出承诺。思想是进行折半，折半后的承诺和原来的承诺等价，不断对向量 $\vec{a}, \vec{b}$进行折半，直到最后变成标量，简单计算即可得到证明。
+
+假设 $\vec{a}$ 与 $\vec{b}$ 的向量长度为 $n$，令 $m = \frac{n}{2}$. 记
+\begin{equation*}
+    z_L = a_mb_0 + a_{m+1}b_1 + \cdots + a_{n-1}b_{m-1} = \vec{a}_R\cdot \vec{b}_L
+\end{equation*}
+\begin{equation*}
+    z_R = a_0b_m + a_{1}b_{m+1} + \cdots + a_{m-1}b_{n-1} = \vec{a}_L\cdot \vec{b}_R
+\end{equation*}
+从最后得到新的承诺 $C'$ 来看这个构造的过程：
+\begin{align*}
+    C' & = x C_L + C + x^{-1}C_R \\
+    & = x (\vec{a}_R \cdot \vec{g}_L + \vec{b}_L \cdot \vec{h}_R + z_L q) \\
+    & \quad + \vec{a}_L \cdot \vec{g}_L + \vec{a}_R \cdot \vec{g}_R + \vec{b}_L \cdot \vec{h}_L + \vec{b}_R \cdot \vec{h}_R + \vec{a} \cdot \vec{b}q \\
+    & \quad + x^{-1}(\vec{a}_L \cdot \vec{g}_R +  + \vec{b}_R \cdot \vec{h}_L + z_R q)\\
+    & = (x\vec{a}_R + \vec{a}_L)\cdot(\vec{g}_L + x^{-1}\vec{g}_R) \\
+    & \quad + (\vec{b}_L + x^{-1}\vec{b}_R)\cdot(\vec{h}_L + x \vec{h}_R) \\
+    & \quad + (x z_L + \vec{a} \cdot \vec{b} + x^{-1}z_R)q \\
+    & := (x\vec{a}_R + \vec{a}_L) \cdot g' + (\vec{b}_L + x^{-1}\vec{b}_R) \cdot h' + (x z_L + \vec{a} \cdot \vec{b} + x^{-1}z_R)q
+\end{align*}
+而恰好
+\begin{align*}
+    (x\vec{a}_R + \vec{a}_L)(\vec{b}_L + x^{-1}\vec{b}_R) & = x \vec{a}_R \vec{b}_L + \vec{a}_L\vec{b}_L + \vec{a}_R\vec{b}_R + x^{-1}\vec{a}_L\vec{b}_R\\
+    & = x \vec{a}_R \vec{b}_L + \vec{a} \cdot \vec{b} + x^{-1}\vec{a}_L\vec{b}_R \\
+    & = x z_L + \vec{a} \cdot \vec{b} + x^{-1}z_R
+\end{align*}
+承诺 $C'$ 也满足原来承诺 $C$ 的内积结构。同时 $g'$ 与 $h'$ 相比原来的 $g$ 与 $h$ 已经折半了。 
+
+协议过程：
+\begin{enumerate}
+    \item Prover计算承诺
+        $$
+        C_L = \vec{a}_R \cdot \vec{g}_L + \vec{b}_L \cdot \vec{h}_R + z_L q
+        $$
+        $$
+        C_R = \vec{a}_L \cdot \vec{g}_R + \vec{b}_R \cdot \vec{h}_L + z_R q
+        $$
+    \item Verifier发送挑战 $x \in \mathbb{F}_p$
+    \item Prover计算新的向量
+        \begin{equation*}
+            \vec{a}' = \vec{a}_L + x\vec{a}_R
+        \end{equation*}
+        \begin{equation*}
+            \vec{b}' = \vec{b}_L + x^{-1}\vec{b}_R
+        \end{equation*}
+    \item Verifier计算新的承诺 $C'$
+        \begin{equation*}
+            C'  = x C_L + C + x^{-1}C_R
+        \end{equation*}
+        更新基：
+        \begin{equation*}
+            \vec{g}' = \vec{g}_L + x^{-1}\vec{g}_R
+        \end{equation*}
+        \begin{equation*}
+            \vec{h}' = \vec{h}_L + x\vec{h}_R
+        \end{equation*}
+        可以证明，新的承诺$C' = \vec{a}' \cdot \vec{g}' + \vec{b}' \cdot \vec{h}' + \vec{a}' \cdot \vec{b}' q$也是满足内积性质的。
+    \item 对$C',\vec{g}',\vec{h}'$重复上述步骤，直到最后向量长度为1，简单计算即可得出等式是否成立。
+\end{enumerate}
+\end{document}
