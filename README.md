@@ -145,8 +145,20 @@
 * [x] 📺 [02-Halo2 深入理解 Permutation & Lookup算法](https://www.bilibili.com/video/BV1C34y1t7pN/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
   * 📝 [笔记](/courses/Halo2-StarLi/02-Halo2%20深入理解Permutation%20&%20Lookup算法.md)
 * [ ] 📺 [03 - Halo2协议基础及介绍](https://www.bilibili.com/video/BV19L4y1T7ai/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
+  * 📝 [笔记](/courses/Halo2-StarLi/03%20-%20Halo2协议基础及介绍.md)
 * [ ] 📺 [04 - Halo2电路进阶（sha256）](https://www.bilibili.com/video/BV1LL411P7ba/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
 * [ ] 📺 [05 - Halo2源代码导读](https://www.bilibili.com/video/BV1HS4y1D7tX/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
+
+### 0xPARC Halo2教程
+官网教程地址见[这里](https://learn.0xparc.org/halo2/)。
+
+#### Learning Group: Lectures
+- [x] [Introduction](https://learn.0xparc.org/materials/halo2/learning-group-1/introduction)
+  - [slides: Brian's Intro](/courses/Halo2-0xPARC/01-Introduction/H2LG%206-13.pdf)
+  - [slides: Ying Tong's Intro to Halo2/Plonk](/courses/Halo2-0xPARC/01-Introduction/intro%20to%20PLONKish_halo2.pdf)
+  - 📒 [笔记](/courses/Halo2-0xPARC/01-Introduction/01-note.md)
+- [ ] [Halo2 API & Building a Basic Fibonacci Circuit (Part 1)](https://learn.0xparc.org/materials/halo2/learning-group-1/halo2-api)
+  - [Haichen's Slides](/courses/Halo2-0xPARC/02-Halo2%20API/Intro%20to%20Halo2%20API.pdf)
 
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
