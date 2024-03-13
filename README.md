@@ -159,6 +159,13 @@
   - 📒 [笔记](/courses/Halo2-0xPARC/01-Introduction/01-note.md)
 - [ ] [Halo2 API & Building a Basic Fibonacci Circuit (Part 1)](https://learn.0xparc.org/materials/halo2/learning-group-1/halo2-api)
   - [Haichen's Slides](/courses/Halo2-0xPARC/02-Halo2%20API/Intro%20to%20Halo2%20API.pdf)
+- [ ] [Halo2 API & Building a Basic Fibonacci Circuit (Part 2)](https://learn.0xparc.org/materials/halo2/learning-group-1/halo2-api-continued)
+- [ ] [Circuit Exercise (Part 1)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-1)
+- [ ] [Circuit Exercise (Part 2)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-2)
+- [ ] [Circuit Exercise (Part 3)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-3)
+- [ ] [Custom Gates](https://learn.0xparc.org/materials/halo2/learning-group-1/custom-gates)
+- [ ] [PLONK Cost Model](https://learn.0xparc.org/materials/halo2/learning-group-1/cost-model)
+
 
 ## 文章
 参考[零知识证明学习资源汇总](https://github.com/sec-bit/learning-zkp/blob/master/zkp-resource-list.md)，阅读相关文章进行学习。
