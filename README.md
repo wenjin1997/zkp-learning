@@ -164,7 +164,7 @@
 - [ ] [Circuit Exercise (Part 2)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-2)
 - [ ] [Circuit Exercise (Part 3)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-3)
 - [ ] [Custom Gates](https://learn.0xparc.org/materials/halo2/learning-group-1/custom-gates)
-- [ ] [PLONK Cost Model](https://learn.0xparc.org/materials/halo2/learning-group-1/cost-model)
+- [ ] [PLONK Cost Model](https://learn.0xparc.org/materials/halo2/learning-group-1/cost-modelad)
 
 
 ## 文章
