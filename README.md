@@ -297,6 +297,9 @@
 * [初等数论-潘承洞](https://book.douban.com/subject/1310584/)，PDF见[这里](/books/%E5%88%9D%E7%AD%89%E6%95%B0%E8%AE%BA-%E9%97%B5%E5%97%A3%E9%B9%A4-%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE.pdf)
 ### 密码学
 * [图解密码技术](https://book.douban.com/subject/26822106/)，PDF见[这里](/books/%E5%9B%BE%E8%A7%A3%E5%AF%86%E7%A0%81%E6%8A%80%E6%9C%AF%20%E7%AC%AC%E4%B8%89%E7%89%88.pdf)
+* Foundations of Cryptography
+  * [Volume 1 Basic Tools](/books/[Foundations.of.Cryptography.Volume.1.Basic.Tools](Oded.Goldreich)(ED2000.COM).pdf)
+  * [Volume 2 Basic Apploications](/books/[Foundations.of.Cryptography.Volume.2..Basic.Applications](Oded.Goldreich)(ED2000.COM).pdf)
 ### ZK
 #### The MoonMath Manual TO ZK-SNARKS
 * github仓库地址见[这里](https://github.com/LeastAuthority/moonmath-manual?tab=readme-ov-file)
