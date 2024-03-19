@@ -30,6 +30,15 @@
   - [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%B3%BB%E5%88%97%20%E7%AC%AC8%E8%AF%BE%EF%BC%9AzkSnark--Groth16%E8%AF%81%E6%98%8E%E7%B3%BB%E7%BB%9F.pdf)
 - [x] [9 Plonk证明系统](https://www.bilibili.com/video/BV13h4y1k7Vc/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
   - [讲义](/courses/cryptography-lynndell/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%B3%BB%E5%88%97%E8%AF%BE%E7%A8%8B9-zkSnark-Plonk%E8%AF%81%E6%98%8E%E7%B3%BB%E7%BB%9F.pdf)
+- [ ] [10 UltraPlonk证明系统](https://www.bilibili.com/video/BV1T34y1T7QA/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
+  - [讲义](/courses/cryptography-lynndell/密码学系列%20第10课%20zkSnark--UltraPlonk证明系统.pdf)
+- [ ] [11 zkSnark-SHA256查找表](https://www.bilibili.com/video/BV1N14y1r7CJ/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
+  - [讲义](/courses/cryptography-lynndell/密码学系列课程%20第11课%20zkSnark-SHA256查找表.pdf)
+- [ ] [12 Halo2证明系统](https://www.bilibili.com/video/BV1294y187tc/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
+  - [讲义](/courses/cryptography-lynndell/第12课%20zkSnark--Halo2证明系统.pdf)
+- [ ] [13 zkStark证明系统](https://www.bilibili.com/video/BV1Xu4y1a7tb/?spm_id_from=333.788&vd_source=c6586ed2410fae637f393017e00f4845)
+  - [讲义](/courses/cryptography-lynndell/密码学系列课程%20第13课%20zkStark证明系统.pdf)
+
 ### ZK Shanghai 2023
 课程官网：[零知识证明工作坊 ZK Shanghai 2023](https://zkshanghai.xyz/)
 
@@ -301,3 +310,4 @@
 * [Awesome zero knowledge proofs (zkp)](https://github.com/matter-labs/awesome-zero-knowledge-proofs): github仓库，丰富的zkp相关资源汇总。
 * [World of Z2O-K7E](https://learn.z2o-k7e.world/index.html)：很好的零知识证明教程。
 * [Vitalik Buterin's website](https://vitalik.eth.limo/index.html)：V神的博客文章。
+* [ZKProof](https://docs.zkproof.org/)：很全面的ZKP资源网站。
