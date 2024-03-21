@@ -1,5 +1,3 @@
-use core::str;
-
 use crate::is_zero::{IsZeroChip, IsZeroConfig};
 use halo2_proofs::{
     arithmetic::FieldExt,

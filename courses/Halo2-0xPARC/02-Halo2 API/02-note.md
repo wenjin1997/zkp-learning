@@ -1,5 +1,10 @@
 # 2 Halo2 API & Building a Basic Fibonacci Circuit
-## Constraint system
+## 构建电路
+构建电路分为三步：
+1. 定义 `Config` 结构，包含电路中要用到的列。
+2. 定义 `Chip` 结构，配置电路中的约束，以及提供 assignment 函数。
+3. 定义一个 `Circuit` 结构，该结构实现了 `Circuit` trait，为电路实例化。
+### Constraint system
 ```rust
 fn selector(&mut self) -> Selector
 fn complex_selector(&mut self) -> Selector
@@ -13,7 +18,8 @@ fn enable_equality<C: Into<<Column<Any>>>>(&mut self, column: C)
 ```
 * 该函数会检查包含的列中的permutation是否正确。
 
-## Circuit trait
+### Circuit trait
+下面就是 `Circuit` trait 的定义，在自己的电路中就需要实现该 trait。
 ```rust
 pub trait Circuit<F: Field> {
     type Config: Clone;
@@ -42,7 +48,8 @@ meta.enable_equality(col_c);
 ```
 调用 `enable_equality()` 函数表明该列参与了 permutation argument。
 
-## `PhantomData` 数据
+## Rust知识补充
+### `PhantomData` 数据
 在[example1.rs](/courses/Halo2-0xPARC/02-Halo2%20API/fibonacci/src/example1.rs)中，结构 `FibonacciChip` 结构如下：
 ```rust
 #[derive(Debug, Clone)]
@@ -56,8 +63,10 @@ struct FibonacciChip<F: FieldExt> {
 > 在结构定义中，不受约束的生命周期和类型是禁止的，因此我们必须在主体中以某种方式引用这些类型，正确地做到这一点对于正确的变异性和丢弃检查是必要的。
 > 我们使用PhantomData来做这个，它是一个特殊的标记类型。PhantomData不消耗空间，但为了静态分析的目的，模拟了一个给定类型的字段。这被认为比明确告诉类型系统你想要的变量类型更不容易出错，同时也提供了其他有用的东西，例如 auto traits 和 drop check 需要的信息。
 
-## cargo
+### cargo
 如果要运行带有`features`的test，可以运行`cargo test --all-features` .
+
+运行`cargo test --help`：
 ```shell
 jinjin@MacBook-Air halo2-examples % cargo test --help
 Execute all unit and integration tests and build examples of a local package
