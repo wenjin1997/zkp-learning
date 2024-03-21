@@ -15,7 +15,7 @@ struct FibonacciConfig {
     pub instance: Column<Instance>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone)]             
 struct FibonacciChip<F: FieldExt> {
     config: FibonacciConfig,
     _marker: PhantomData<F>,
@@ -209,8 +209,19 @@ mod tests {
         // uncomment the following line and the assert will fail
         // _prover.assert_satisfied();
     }
-}
 
-fn main() {
+    #[cfg(feature = "dev-graph")]
+    #[test]
+    fn plot_fibonacci1() {
+        use plotters::prelude::*;
 
+        let root = BitMapBackend::new("fib-1-layout.png", (1024, 3096)).into_drawing_area();
+        root.fill(&WHITE).unwrap();
+        let root = root.titled("Fib 1 Layout", ("sans-serif", 60)).unwrap();
+
+        let circuit = MyCircuit::<Fp>(PhantomData);
+        halo2_proofs::dev::CircuitLayout::default()
+            .render(4, &circuit, &root)
+            .unwrap();
+    }
 }
