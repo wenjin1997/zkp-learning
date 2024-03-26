@@ -172,4 +172,152 @@ struct RangeCheckConfig<F: FieldExt, const RANGE: usize, const LOOKUP_RANGE: usi
 ```
 此电路布局如下：
 ![](/courses/Halo2-0xPARC/halo2-examples/range-check-2-layout.png){:height="40%" width="40%"}
-### 方法三：
+### 方法三：k-bits查找
+代码：
+* [table.rs](/courses/Halo2-0xPARC/halo2-examples/src/range_check/example3_broken/table.rs)
+* [example3_broken.rs](/courses/Halo2-0xPARC/halo2-examples/src/range_check/example3_broken.rs) : 这里代码会报错，在下一讲解释如何修复。
+
+```rust
+/// This helper uses a lookup table to check that the value witnessed in a given cell is
+/// within a given range.
+///
+/// The lookup table is tagged by `num_bits` to give a strict range check.
+///
+///        value     |   q_lookup  |  table_num_bits  |  table_value  |
+///       -------------------------------------------------------------
+///          v_0     |      0      |        1         |       0       |
+///          v_1     |      1      |        1         |       1       |
+///          ...     |     ...     |        2         |       2       |
+///          ...     |     ...     |        2         |       3       |
+///          ...     |     ...     |        3         |       4       |
+///
+/// We use a K-bit lookup table, that is tagged 1..=K, where the tag `i` marks an `i`-bit value.
+///
+```
+对于 `value` 是 K-bit，会相应查找 K-bit 的 lookup table。这里需要看 `value` 和 value 对应的 `bit` 比特位是否在 `table_value` 和 `table_num_bits` 这两列中。
+
+首先定义查找表 `RangeTableConfig` ：
+```rust
+/// A lookup table of values up to RANGE
+/// e.g. RANGE = 256, values = [0..255]
+/// This table is tagged by an index `k`, where `k` is the number of bits of the element in the `value` column.
+#[derive(Debug, Clone)]
+pub(super) struct RangeTableConfig<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> {
+    pub(super) num_bits: TableColumn,
+    pub(super) value: TableColumn,
+    _marker: PhantomData<F>,
+}
+```
+定义 `RangeTableConfig` 的 `configure` 方法，注意这里要先确保 `assert_eq!(1 << NUM_BITS, RANGE);`。
+```rust
+pub(super) fn configure(meta: &mut ConstraintSystem<F>) -> Self {
+    assert_eq!(1 << NUM_BITS, RANGE);
+
+    let num_bits = meta.lookup_table_column();
+    let value = meta.lookup_table_column();
+
+    Self {
+        num_bits,
+        value,
+        _marker: PhantomData,
+    }
+}
+```
+接着定义 `RangeTableConfig` 的 `load` 方法，相当于建立查找表。
+```rust
+pub(super) fn load(&self, layouter: &mut impl Layouter<F>) -> Result<(), Error> {
+    layouter.assign_table(
+        || "load range-check table", 
+        |mut table| {
+            let mut offset = 0;
+
+            // Assign (num_bits = 1, value = 0)
+            {
+                table.assign_cell(
+                    || "assign num_bits", 
+                    self.num_bits, 
+                    offset, 
+                    || Value::known(F::one()),
+                )?;
+                table.assign_cell(
+                    || "assign value", 
+                    self.value, 
+                    offset, 
+                    || Value::known(F::zero()),
+                )?;
+
+                offset += 1;
+            }
+
+            for num_bits in 1..=NUM_BITS {
+                for value in (1 << (num_bits - 1))..(1 << num_bits) {
+                    table.assign_cell(
+                        || "assign num_bits", 
+                        self.num_bits, 
+                        offset, 
+                        || Value::known(F::from(num_bits as u64)),
+                    )?;
+                    table.assign_cell(
+                        || "assign value", 
+                        self.value, 
+                        offset, 
+                        || Value::known(F::from(value as u64)),
+                    )?;
+                    offset += 1;
+                }
+            }
+
+            Ok(())
+        }
+    )
+}  
+```
+
+对于范围查找结构体 `RangeCheckConfig`，定义如下：
+```rust
+#[derive(Debug, Clone)]
+struct RangeCheckConfig<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> {
+    q_lookup: Selector,
+    num_bits: Column<Advice>,
+    value: Column<Advice>,
+    table: RangeTableConfig<F, NUM_BITS, RANGE>,
+}
+```
+其具体实现方法见[example3_broken.rs](/courses/Halo2-0xPARC/halo2-examples/src/range_check/example3_broken.rs)，这个代码中在 `configure` 方法中下述代码会导致报错：
+```rust
+// THIS IS BROKEN!!!!!!
+// Hint: consider the case where q_lookup = 0. What are our input expressions to the lookup argument then?
+vec![
+    (q_lookup.clone() * num_bits, table.num_bits),
+    (q_lookup.clone() * value, table.value),
+]
+```
+运行报错信息为：
+```shell
+error: lookup input does not exist in table
+  (L0, L1) ∉ (F0, F1)
+
+  Lookup inputs:
+    L0 = x1 * x0
+    ^
+    | Cell layout at row 504:
+    |   |Rotation| A0 | F2 |
+    |   +--------+----+----+
+    |   |    0   | x0 | x1 | <--{ Lookup inputs queried here
+    |
+    | Assigned cell values:
+    |   x0 = 0
+    |   x1 = 0
+
+    L1 = x1 * x0
+    ^
+    | Cell layout at row 504:
+    |   |Rotation| A1 | F2 |
+    |   +--------+----+----+
+    |   |    0   | x0 | x1 | <--{ Lookup inputs queried here
+    |
+    | Assigned cell values:
+    |   x0 = 0
+    |   x1 = 0
+```
+这里显示 lookup 的输入没有在查找表中。关于该 bug 的修复在下一讲中会讲到。

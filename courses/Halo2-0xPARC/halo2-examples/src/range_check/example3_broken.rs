@@ -2,8 +2,7 @@ use halo2_proofs::{
     arithmetic::FieldExt,
     circuit::{AssignedCell, Layouter, Value},
     plonk::{
-        Advice, Assigned, Column, ConstraintSystem, Constraints, Error, Expression, Selector,
-        TableColumn,
+        Advice, Assigned, Column, ConstraintSystem, Selector, Error,
     },
     poly::Rotation,
 };
@@ -60,7 +59,7 @@ impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> RangeCheckConfig<F,
             // Hint: consider the case where q_lookup = 0. What are our input expressions to the lookup argument then?
             vec![
                 (q_lookup.clone() * num_bits, table.num_bits),
-                (q_lookup * value, table.value),
+                (q_lookup.clone() * value, table.value),
             ]
         });
 
@@ -79,7 +78,7 @@ impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> RangeCheckConfig<F,
         value: Value<Assigned<F>>,
     ) -> Result<RangeConstrained<F>, Error> {
         layouter.assign_region(
-            || "Assign value",
+            || "Assign value", 
             |mut region| {
                 let offset = 0;
 
@@ -89,16 +88,16 @@ impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> RangeCheckConfig<F,
                 // Assign num_bits
                 let num_bits = num_bits.map(|v| F::from(v as u64));
                 let num_bits = region.assign_advice(
-                    || "num_bits",
-                    self.num_bits,
-                    offset,
+                    || "num_bits", 
+                    self.num_bits, 
+                    offset, 
                     || num_bits.into(),
                 )?;
 
                 // Assign value
-                let assigned_cell =
+                let assigned_cell = 
                     region.assign_advice(|| "value", self.value, offset, || value)?;
-
+                
                 Ok(RangeConstrained {
                     num_bits,
                     assigned_cell,
@@ -125,8 +124,8 @@ mod tests {
         value: Value<Assigned<F>>,
     }
 
-    impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> Circuit<F>
-        for MyCircuit<F, NUM_BITS, RANGE>
+    impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> Circuit<F> 
+        for MyCircuit<F, NUM_BITS, RANGE> 
     {
         type Config = RangeCheckConfig<F, NUM_BITS, RANGE>;
         type FloorPlanner = V1;
@@ -141,16 +140,12 @@ mod tests {
             RangeCheckConfig::configure(meta, num_bits, value)
         }
 
-        fn synthesize(
-            &self,
-            config: Self::Config,
-            mut layouter: impl Layouter<F>,
-        ) -> Result<(), Error> {
+        fn synthesize(&self, config: Self::Config, mut layouter: impl Layouter<F>) -> Result<(), Error> {
             config.table.load(&mut layouter)?;
 
             config.assign(
-                layouter.namespace(|| "Assign value"),
-                self.num_bits,
+                layouter.namespace(|| "Assign value"), 
+                self.num_bits, 
                 self.value,
             )?;
 
@@ -162,7 +157,7 @@ mod tests {
     fn test_range_check_3() {
         let k = 9;
         const NUM_BITS: usize = 8;
-        const RANGE: usize = 256; // 8-bit value
+        const RANGE: usize = 256;  // 8-bit value
 
         // Successful cases
         for num_bits in 1u8..=NUM_BITS.try_into().unwrap() {

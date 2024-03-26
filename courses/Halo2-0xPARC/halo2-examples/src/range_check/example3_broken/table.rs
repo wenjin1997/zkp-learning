@@ -32,22 +32,22 @@ impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> RangeTableConfig<F,
 
     pub(super) fn load(&self, layouter: &mut impl Layouter<F>) -> Result<(), Error> {
         layouter.assign_table(
-            || "load range-check table",
+            || "load range-check table", 
             |mut table| {
                 let mut offset = 0;
 
                 // Assign (num_bits = 1, value = 0)
                 {
                     table.assign_cell(
-                        || "assign num_bits",
-                        self.num_bits,
-                        offset,
+                        || "assign num_bits", 
+                        self.num_bits, 
+                        offset, 
                         || Value::known(F::one()),
                     )?;
                     table.assign_cell(
-                        || "assign value",
-                        self.value,
-                        offset,
+                        || "assign value", 
+                        self.value, 
+                        offset, 
                         || Value::known(F::zero()),
                     )?;
 
@@ -57,24 +57,23 @@ impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> RangeTableConfig<F,
                 for num_bits in 1..=NUM_BITS {
                     for value in (1 << (num_bits - 1))..(1 << num_bits) {
                         table.assign_cell(
-                            || "assign num_bits",
-                            self.num_bits,
-                            offset,
+                            || "assign num_bits", 
+                            self.num_bits, 
+                            offset, 
                             || Value::known(F::from(num_bits as u64)),
                         )?;
                         table.assign_cell(
-                            || "assign value",
-                            self.value,
-                            offset,
+                            || "assign value", 
+                            self.value, 
+                            offset, 
                             || Value::known(F::from(value as u64)),
                         )?;
                         offset += 1;
                     }
-
                 }
 
                 Ok(())
-            },
+            }
         )
-    }
+    }  
 }

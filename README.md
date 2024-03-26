@@ -148,6 +148,9 @@
 * [WTF-zk](https://github.com/WTFAcademy/WTF-zk)：不错的零知识证明入门教程，包含一些数学基础知识，并有python代码作为示例。
 
 ## Halo2
+### The halo2 Book
+官方链接见[这里](https://zcash.github.io/halo2/)。
+
 ### StarLi Halo2课程
 * [x] 📺 [01-Halo2入门基础介绍](https://www.bilibili.com/video/BV1ML4y1M7iV/?spm_id_from=333.999.0.0&vd_source=c6586ed2410fae637f393017e00f4845)
   * 📝 [笔记](/courses/Halo2-StarLi/01-Halo2入门基础介绍.md)
