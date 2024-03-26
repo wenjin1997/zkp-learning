@@ -176,7 +176,8 @@
   - 💻 [example3.rs](/courses/Halo2-0xPARC/halo2-examples/src/fibonacci/example3.rs) : 利用判零电路 [is_zero.rs](/courses/Halo2-0xPARC/halo2-examples/src/is_zero.rs) 来实现简单的if-else逻辑。
 - [x] [Circuit Exercise (Part 1)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-1)
   - 📒 [笔记](/courses/Halo2-0xPARC/04-Circuit%20Exercises%201/04-note.md)
-- [ ] [Circuit Exercise (Part 2)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-2)
+- [x] [Circuit Exercise (Part 2)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-2)
+  - 📒 [笔记](/courses/Halo2-0xPARC/05-Circuit%20Exercises%202/05-note.md)
 - [ ] [Circuit Exercise (Part 3)](https://learn.0xparc.org/materials/halo2/learning-group-1/exercise-3)
 - [ ] [Custom Gates](https://learn.0xparc.org/materials/halo2/learning-group-1/custom-gates)
 - [ ] [PLONK Cost Model](https://learn.0xparc.org/materials/halo2/learning-group-1/cost-modelad)

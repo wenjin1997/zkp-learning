@@ -172,3 +172,4 @@ struct RangeCheckConfig<F: FieldExt, const RANGE: usize, const LOOKUP_RANGE: usi
 ```
 此电路布局如下：
 ![](/courses/Halo2-0xPARC/halo2-examples/range-check-2-layout.png){:height="40%" width="40%"}
+### 方法三：
