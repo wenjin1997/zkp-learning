@@ -2,7 +2,7 @@
 代码：
 * [table.rs](/courses/Halo2-0xPARC/halo2-examples/src/range_check/example3/table.rs)
 * [example3.rs](/courses/Halo2-0xPARC/halo2-examples/src/range_check/example3.rs)
-* [decompose_range_check.rs](/courses/Halo2-0xPARC/halo2-examples/src/range_check/decompose_range_check.rs): 该代码思想是将 value 分为 K-bit 个块，再进行查找，目前只有代码框架，在下一讲中进行完善。
+* [decompose_range_check_spec.rs](/courses/Halo2-0xPARC/halo2-examples/src/range_check/decompose_range_check_spec.rs): 该代码思想是将 value 分为 K-bit 个块，再进行查找，目前只有代码框架，在下一讲中进行完善。
 
 上一讲说到在 [example3_broken.rs](/courses/Halo2-0xPARC/halo2-examples/src/range_check/example3_broken.rs) 中下面的代码会导致报错：
 ```rust
